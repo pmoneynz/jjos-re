@@ -5,20 +5,23 @@
 - SHA-256: `7a64b6c82bf47bff3f0091fa90a0c7162fc563352f1c779a2c59f9da449e66b9`
 - Entropy: `6.8694` bits/byte
 
-## Likely Architecture / Mapping
+## Mapping Heuristics and Current Architecture Baseline
 
-- Strongest image-base candidate: `0x09000000`
-- Evidence: `6281` aligned big-endian words map back inside the file under that base.
-- Offset `0x0` looks compatible with a ColdFire/M68k-style reset vector layout: initial SP `0x01d02b40`, initial PC `0x09000000`.
-- Ghidra on this machine includes `68000:BE:32:Coldfire`, which matches the most likely family.
-- Secondary prefixes `0x08xxxxxx` and `0x0Axxxxxx` also appear, which suggests additional mapped regions, relocation domains, or mixed resource/code tables.
+- Static pointer-density scan still reports a legacy high-score base candidate at `0x09000000`.
+- Legacy evidence count: `6281` aligned big-endian words map inside-file under that base arithmetic.
+- This scanner is ISA-agnostic and does **not** prove CPU architecture by itself.
+- Current repository baseline for disassembly remains:
+  - SuperH-family import in Ghidra (`SuperH4:LE:32:default`)
+  - raw image base `0x00000000`
+  - seed flow `0x00000000 -> 0x00000626`
+- `0x08xxxxxx` / `0x09xxxxxx` / `0x0Axxxxxx` pointer-like prefixes still suggest multiple mapped regions or table domains worth tracking.
 
 ## Candidate Validation / Checksum Areas
 
 - Boot/update string block at `0x7BE0-0x8130`: dense cluster of status and error strings tied to loading and writing the OS image.
-- Direct/immediate references into that boot/update block under base `0x09000000`: `207` hits.
+- Direct/immediate references into that boot/update block under the legacy `0x09000000` arithmetic scan: `207` hits.
 - Flash progress strings at `0x94A0` and `0x94B8` are directly referenced from file offsets `0x4F61C` and `0x89290`.
-- Later JJOS/OS-XL UI blocks around `0xC7D40-0xD3230` do not expose clean `0x09000000 + offset` references, which suggests a different addressing scheme or table-driven lookup.
+- Later JJOS/OS-XL UI blocks around `0xC7D40-0xD3230` do not expose clean direct references under that same arithmetic model, suggesting table-driven/indirect lookup.
 - No standard table-driven `CRC32` or `CRC16-CCITT` lookup tables were found in the image.
 - Practical implication: update validation is likely custom, bitwise, additive, or embedded inside hand-written routines rather than a stock table-based CRC implementation.
 
