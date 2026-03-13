@@ -1,0 +1,387 @@
+category	offset_hex	length	text
+security_misc	0x7c70	12	MPC2500 TEST
+update_flash	0x7c9c	32	====== MPC2500 OS UPDATE =======
+update_flash	0x7cf8	27	    Loading OS file .......
+update_flash	0x7d14	25	  OS file not found !!   
+storage_filesystem	0x7d38	25	 Insert memory card !!   
+storage_filesystem	0x7ea3	28	      No memory card !!     
+storage_filesystem	0x7f51	28	       Disk is full!!       
+update_flash	0x7fa8	28	    File write error !!     
+storage_filesystem	0x7fe2	28	      USB<===>MPC2500 !!    
+sequencer_song	0x8056	28	     End of sequence !!     
+sequencer_song	0x8073	28	    Sequence is unused !!   
+sequencer_song	0x8090	28	  Too many bars! (999max)   
+update_flash	0x80ca	28	   Flash ROM erase error!!  
+update_flash	0x80e7	28	   Flash ROM write error!!  
+update_flash	0x8104	28	   Flash ROM read  error!!  
+midi_program	0x8121	28	    Program name exist!!    
+sampling_audio	0x813e	28	     Sample name exist!!    
+sampling_audio	0x815b	28	     No sample wave !!      
+sampling_audio	0x81cf	28	     ChopShop sample !!     
+update_flash	0x94a0	22	Flash ROM erasing    %
+update_flash	0x94b8	22	Flash ROM Writing    %
+security_misc	0x10000	47	MPC2500         Version=3.13   16-FEB-2015     
+sequencer_song	0x45128	7	lBAr#g"
+sequencer_song	0x60425	6	BAr.gw
+sequencer_song	0x6254c	7	lBAr#gC
+sequencer_song	0x659ac	7	lBAr#gp
+storage_filesystem	0x8d278	6	USBC0\
+storage_filesystem	0x8d284	4	USBS
+sequencer_song	0x8f6ed	4	BArj
+midi_program	0xc7034	7	NOTE^ON
+sampling_audio	0xc7048	4	MONO
+sampling_audio	0xc7084	8	ANALOG  
+sampling_audio	0xc7090	8	DIGITAL 
+sampling_audio	0xc70a8	6	MONO L
+sampling_audio	0xc70b0	6	MONO R
+sampling_audio	0xc70b8	6	STEREO
+security_misc	0xc70c0	26	    JJ OS   Version 0.00  
+storage_filesystem	0xc715c	8	AUTOLOAD
+sequencer_song	0xc7168	8	Sequence
+security_misc	0xc7174	14	CLEAR PASSWORD
+sequencer_song	0xc7284	4	Song
+sequencer_song	0xc729c	7	Track01
+midi_program	0xc75a0	26	Waiting for MIDI time code
+midi_program	0xc75bc	23	Waiting for MIDI 'Play'
+sequencer_song	0xc75fc	11	TRACK DATA:
+legacy_compatibility	0xc7618	9	MPC2000XL
+sequencer_song	0xc764c	14	ALL_SEQS&SONGS
+midi_program	0xc76cc	73	%$*R(&.,0/-+17356EQPABLM8>?@IJG'49:;<=CDFHKNO#)2STUVWXYZ[\]^_`abProgram01
+security_misc	0xc79cc	4	TEST
+sequencer_song	0xc7a90	5	Bars:
+midi_program	0xc7ad4	5	Midi:
+sequencer_song	0xc7b0c	11	Change bars
+sequencer_song	0xc7b18	14	Sequence Bars:
+sequencer_song	0xc7b28	14	Recorded Bars:
+sequencer_song	0xc7b38	31	Change into the recorded bars ?
+sequencer_song	0xc7b60	14	Program Change
+sequencer_song	0xc7b98	24	Transmit program changes
+sequencer_song	0xc7bb4	14	in this track:
+sequencer_song	0xc7bfc	16	Track Mute Event
+sequencer_song	0xc7c10	22	Use track mute events:
+storage_filesystem	0xc7cbc	10	 HARD^DISK
+update_flash	0xc7d58	25	   Not MPC2500 OS file !!
+update_flash	0xc7d74	9	OS update
+update_flash	0xc7d80	31	This writes OS to Flash memory.
+security_misc	0xc7e64	12	MPC2500 TEST
+update_flash	0xc7e74	12	OS-XL update
+update_flash	0xc7e84	34	This writes OS-XL to Flash memory.
+sampling_audio	0xc7ea8	15	Sample Exists!!
+sampling_audio	0xc7eb8	20	Sample name exists!!
+midi_program	0xc7f20	14	Load a Program
+midi_program	0xc7f38	16	Program Exists!!
+midi_program	0xc7f4c	21	Program name exists!!
+midi_program	0xc7f64	12	PROGRAM ONLY
+sampling_audio	0xc7f74	12	WITH SAMPLE 
+sampling_audio	0xc7f84	20	Replace same samples
+midi_program	0xc7fc8	18	clear all programs
+sampling_audio	0xc7fdc	13	and samples!!
+sequencer_song	0xc7fec	15	Load a Sequence
+sequencer_song	0xc8008	15	SEQUENCE MEMORY
+sequencer_song	0xc8018	21	Sequence memory full!
+sequencer_song	0xc8068	25	Load ALL(SEQS&SONGS) File
+sequencer_song	0xc80a4	26	      sequence and songs!!
+sequencer_song	0xc80c0	31	  SEQ will load single sequence
+legacy_compatibility	0xc8108	24	Load ALL(MPC2000XL) File
+midi_program	0xc8160	29	Load all programs and samples
+sequencer_song	0xc8180	25	and ALL(SEQS&SONGS)files.
+midi_program	0xc8204	23	Load MPC2000XL Programs
+midi_program	0xc821c	26	    programs and samples!!
+storage_filesystem	0xc8238	19	Access to:HARD DISK
+storage_filesystem	0xc824c	21	Access to:MEMORY CARD
+storage_filesystem	0xc8288	33	disk on your Mac,before you leave
+storage_filesystem	0xc82c0	11	Change Disk
+storage_filesystem	0xc82cc	21	Access to:HARD DISK  
+sampling_audio	0xc832c	28	Sample assign to pad Window:
+storage_filesystem	0xc83a8	8	AUTOLOAD
+storage_filesystem	0xc8428	13	[MEMORY CARD]
+storage_filesystem	0xc8438	13	[ HARD DISK ]
+midi_program	0xc84b8	17	SAVE ALL PROGRAMS
+sampling_audio	0xc84cc	12	AND SAMPLES.
+sequencer_song	0xc84dc	18	SAVE ALL SEQUENCES
+sequencer_song	0xc84f0	16	AND SONGS.(Pack)
+midi_program	0xc8510	13	ALL^PROGRAMS.
+sampling_audio	0xc8520	12	ALL^SAMPLES.
+sequencer_song	0xc8530	20	ALL^SEQS&SONGS(Pack)
+sequencer_song	0xc85c8	24	This will erase sequence
+sequencer_song	0xc860c	23	SEQUENCES DATA IN FLASH
+midi_program	0xc8654	20	programs and samples
+midi_program	0xc8690	22	ALL PROGRAMS & SAMPLES
+sequencer_song	0xc87e0	11	blank bars.
+sequencer_song	0xc87f8	14	selected bars!
+sequencer_song	0xc8810	4	BARS
+sequencer_song	0xc8844	10	First bar:
+sequencer_song	0xc8850	10	After bar:
+sequencer_song	0xc885c	9	Last bar:
+sequencer_song	0xc8884	15	Number of bars:
+midi_program	0xc88b8	10	NOTES     
+sequencer_song	0xc8938	10	TEMPO     
+sequencer_song	0xc8958	10	TRACK MUTE
+sequencer_song	0xc89f4	5	TRACK
+sequencer_song	0xc8abc	14	PROGRAM CHANGE
+sequencer_song	0xc8b28	6	TRACK:
+sequencer_song	0xc8b38	25	---- End of sequence ----
+midi_program	0xc8bc4	6	Notes:
+sequencer_song	0xc8bdc	4	BARS
+sequencer_song	0xc8c5c	19	(Except drum track)
+sequencer_song	0xc8c8c	4	BARS
+sampling_audio	0xc8cc8	18	Free sample memory
+sampling_audio	0xc8cec	12	Time MONO  :
+sampling_audio	0xc8cfc	12	Time STEREO:
+sampling_audio	0xc8d0c	11	Copy Sample
+sampling_audio	0xc8d30	7	Sample:
+sampling_audio	0xc8d44	13	Delete Sample
+sampling_audio	0xc8d54	7	Sample=
+sampling_audio	0xc8d78	13	this sample!!
+sampling_audio	0xc8d8c	18	Delete ALL Samples
+sampling_audio	0xc8dc0	9	samples!!
+sampling_audio	0xc8dcc	11	Sample list
+sampling_audio	0xc8e14	8	(STEREO)
+sampling_audio	0xc8e20	8	( MONO )
+sequencer_song	0xc8e44	5	TEMPO
+sampling_audio	0xc8f35	4	MONO
+sampling_audio	0xc8f41	4	MONO
+sampling_audio	0xc8fb4	6	SAMPLE
+midi_program	0xc8fcc	4	NOTE
+midi_program	0xc9098	24	Reset all note assign to
+sampling_audio	0xc90d4	13	Purge Samples
+sampling_audio	0xc9100	23	all samples not used in
+midi_program	0xc9118	23	any programs in memory.
+sampling_audio	0xc9130	20	    samples not used
+sampling_audio	0xc919c	15	Pad Sample Edit
+sequencer_song	0xc91ac	5	TEMPO
+sequencer_song	0xc91d0	15	Original tempo:
+sampling_audio	0xc921c	27	  KEEP:Keeps as new sample.
+sampling_audio	0xc9274	11	New sample:
+midi_program	0xc9280	4	MIDI
+midi_program	0xc9290	4	NOTE
+sequencer_song	0xc92b0	29	Active track receive channel:
+sequencer_song	0xc92e0	34	Sequence change by program change:
+midi_program	0xc93c4	24	Reset all note assign to
+sequencer_song	0xc9408	8	Sequence
+sequencer_song	0xc941c	5	Tempo
+sequencer_song	0xc9424	4	Bars
+sequencer_song	0xc9464	5	Song:
+sequencer_song	0xc946c	13	(end of song)
+sampling_audio	0xc94bc	19	Record mix changes:
+sequencer_song	0xc9568	26	<<STEP>> <<BAR>> STOP PLAY
+sequencer_song	0xc9584	6	Track=
+sampling_audio	0xc95b4	6	RECORD
+sampling_audio	0xc95e8	11	Recording..
+sampling_audio	0xc9604	8	ANALOG  
+sampling_audio	0xc9610	8	DIGITAL 
+sequencer_song	0xc9660	6	Track:
+sampling_audio	0xc9668	13	Sample Memory
+sampling_audio	0xc96f8	13	Record event:
+sampling_audio	0xc9708	8	Sample01
+sequencer_song	0xc980c	15	TRACK^(All^Pad)
+midi_program	0xc9824	9	NOTE ON  
+sampling_audio	0xc9960	4	MONO
+sampling_audio	0xc9bfc	29	Mute/stop of one-shot sample:
+security_misc	0xc9d34	24	======= PAD TEST =======
+sequencer_song	0xc9d78	11	Change Bars
+sequencer_song	0xc9d84	26	Current=     >   New bars:
+sequencer_song	0xc9dc0	11	last bars!!
+sequencer_song	0xc9dec	20	bars after last bar.
+sequencer_song	0xc9e30	14	Number of bars
+sequencer_song	0xc9e48	11	First bar :
+sequencer_song	0xc9e54	11	 Last bar :
+sequencer_song	0xc9e64	15	Number of bars:
+sampling_audio	0xc9e88	7	SAMPLE:
+sampling_audio	0xc9ea8	7	SAMPLE:
+sequencer_song	0xc9f10	17	END OF SEQUENCE  
+sequencer_song	0xc9f48	8	Sequence
+sequencer_song	0xc9f74	14	Sequence name:
+sequencer_song	0xc9f84	14	Next sequence:
+sequencer_song	0xc9f94	16	Sequence Default
+sequencer_song	0xc9fc0	6	Tempo:
+sequencer_song	0xc9fc8	6	Bars :
+sequencer_song	0xc9fd0	13	Copy Sequence
+sequencer_song	0xc9ff4	15	Delete Sequence
+sequencer_song	0xca020	15	this sequence!!
+sequencer_song	0xca038	20	Delete ALL Sequences
+sequencer_song	0xca070	11	sequences!!
+sequencer_song	0xca0ac	26	setups of this sequence as
+midi_program	0xca118	27	Duration of recorded notes:
+midi_program	0xca218	29	Pressing FIX will change note
+midi_program	0xca238	25	timing of recorded notes.
+midi_program	0xca268	11	Note^value:
+midi_program	0xca2ac	5	Note:
+midi_program	0xca2b4	31	Pressing DO IT will change note
+midi_program	0xca2f8	11	Note value:
+sequencer_song	0xca330	12	Tempo Change
+sequencer_song	0xca354	13	Tempo change:
+sequencer_song	0xca388	9	Fix Tempo
+sequencer_song	0xca394	9	Fix tempo
+sequencer_song	0xca3a0	29	Pressing DO IT will fix tempo
+sequencer_song	0xca3c0	17	of all sequences.
+sequencer_song	0xca3e4	5	Track
+sequencer_song	0xca404	11	Track name:
+sequencer_song	0xca420	12	Delete Track
+sequencer_song	0xca454	12	this track!!
+sequencer_song	0xca47c	17	Delete ALL Tracks
+sequencer_song	0xca4b0	8	tracks!!
+sequencer_song	0xca4bc	10	Copy Track
+sequencer_song	0xca4cc	11	Audio Track
+midi_program	0xca4e0	10	Program  :
+sequencer_song	0xca534	4	Song
+sequencer_song	0xca554	10	Song name:
+sequencer_song	0xca560	9	Copy Song
+sequencer_song	0xca57c	5	Song:
+sequencer_song	0xca584	11	Delete Song
+sequencer_song	0xca5ac	11	this song!!
+sequencer_song	0xca5c0	16	Delete ALL Songs
+sequencer_song	0xca5f4	7	songs!!
+sequencer_song	0xca5fc	12	Tempo Change
+sequencer_song	0xca60c	26	Ignore tempo change events
+sequencer_song	0xca628	12	in sequence:
+sequencer_song	0xca63c	9	Fix Tempo
+sequencer_song	0xca648	9	Fix tempo
+sequencer_song	0xca654	29	Pressing DO IT will fix tempo
+sequencer_song	0xca674	28	of sequences this song used.
+sequencer_song	0xca694	19	Convert Song to Seq
+sequencer_song	0xca6a8	10	From Song:
+sequencer_song	0xca6b4	12	To Sequence:
+sequencer_song	0xca6c4	13	Track status:
+sequencer_song	0xca6ec	20	MUTE TRACKS IGNORED 
+midi_program	0xca704	20	MERGE ON MIDI CH    
+midi_program	0xca71c	7	Program
+midi_program	0xca744	13	Program name:
+sequencer_song	0xca754	20	Midi program change:
+midi_program	0xca76c	11	New Program
+midi_program	0xca794	12	Copy Program
+midi_program	0xca7ac	14	Delete Program
+midi_program	0xca7d8	14	this program!!
+midi_program	0xca7f0	19	Delete ALL Programs
+midi_program	0xca824	11	programs!!!
+midi_program	0xca844	8	NOTE ON 
+sequencer_song	0xcaa0c	15	Save a Sequence
+midi_program	0xcaa90	14	Save a Program
+midi_program	0xcaaac	12	PROGRAM ONLY
+sampling_audio	0xcaabc	12	WITH SAMPLES
+sampling_audio	0xcaacc	21	Replace same samples:
+sequencer_song	0xcaae4	21	Save ALL Seqs & Songs
+midi_program	0xcab0c	17	Save ALL Programs
+sequencer_song	0xcab74	36	<Same^Seqs&Songs^is^always^replaced.
+storage_filesystem	0xcac58	14	AUTOLOAD file.
+storage_filesystem	0xcac68	8	AUTOLOAD
+storage_filesystem	0xcac74	22	Autoload Folder Exists
+storage_filesystem	0xcac8c	26	  AUTOLOAD folder exists!!
+storage_filesystem	0xcaca8	25	existing AUTOLOAD folder.
+midi_program	0xcad9c	11	NOTE ONLY  
+midi_program	0xcadac	11	EXCEPT NOTE
+sequencer_song	0xcae2c	11	TEMPO      
+sequencer_song	0xcae4c	11	TRACK MUTE 
+midi_program	0xcaeb4	5	Note:
+sequencer_song	0xcaed4	10	ALL TRACKS
+sequencer_song	0xcaef8	5	TRACK
+storage_filesystem	0xcaf78	28	MPC2500 Memory Card     1.00
+storage_filesystem	0xcaf9c	36	MPC2500 Hard Disk       1.00Sequence
+midi_program	0xcaffc	20	Loading program.....
+sampling_audio	0xcb014	20	Loading sample......
+sequencer_song	0xcb02c	14	ALL_SEQS&SONGS
+sequencer_song	0xcb03c	16	Loading sequence
+update_flash	0xcb05c	21	   Flash ROM erasing 
+update_flash	0xcb074	21	   Flash ROM Writing 
+storage_filesystem	0xcb40c	12	AFat12Volume
+storage_filesystem	0xcb41c	12	AFat16Volume
+storage_filesystem	0xcb42c	12	AFat32Volume
+storage_filesystem	0xcb43c	8	MSDOS5.0
+storage_filesystem	0xcb448	11	MPC2500DISK
+storage_filesystem	0xcb454	8	FAT12   
+storage_filesystem	0xcb460	8	FAT16   
+storage_filesystem	0xcb46c	8	FAT32   
+storage_filesystem	0xcb578	13	ACompactFlash
+storage_filesystem	0xcb588	9	AHardDisk
+sequencer_song	0xcc0cc	5	TRACK
+sequencer_song	0xcc158	6	TRACK-
+sequencer_song	0xcc160	6	TRACK+
+midi_program	0xcc1a8	11	Note^value:
+sequencer_song	0xcc1bc	32	     Track     :    Program     
+sequencer_song	0xcc200	14	 Track Default
+sequencer_song	0xcc230	25	setups of these tracks as
+sequencer_song	0xcc268	25	Sequence            Bars 
+sequencer_song	0xcc33c	5	TRACK
+sampling_audio	0xcc374	7	ANALOG 
+sampling_audio	0xcc37c	7	DIGITAL
+sequencer_song	0xcc514	7	Track  
+sampling_audio	0xcc5a0	6	Sample
+sampling_audio	0xcc69c	26	Convert to patched phrase.
+sequencer_song	0xcc6d4	15	Original tempo:
+sampling_audio	0xcc6e4	26	Convert to sliced samples.
+midi_program	0xcc700	19	Create new program:
+sampling_audio	0xcc714	26	   Sample is too short !! 
+sampling_audio	0xcc77c	11	New sample:
+sampling_audio	0xcc788	31	[F2] Convert to SLICED SAMPLES.
+sampling_audio	0xcc7a8	31	[F3] Convert to PATCHED PHRASE.
+sampling_audio	0xcc828	11	Sample Edit
+sampling_audio	0xcc898	11	New sample:
+sequencer_song	0xcc948	5	TEMPO
+sequencer_song	0xcc95c	15	Original tempo:
+sequencer_song	0xcc984	12	Detect Tempo
+sequencer_song	0xcc9ac	25	sample tempo and enter to
+sequencer_song	0xcc9c8	19	current tempo find.
+sampling_audio	0xcc9fc	30	[MANUAL] From sample START,END
+sampling_audio	0xcca54	27	  KEEP:Keeps as new sample.
+sampling_audio	0xccaac	19	Patched Phrase Edit
+sampling_audio	0xccac8	26	Re-build patched phrase as
+sampling_audio	0xccae4	14	normal sample.
+sequencer_song	0xccafc	6	Tempo:
+sampling_audio	0xccb18	19	Edit:STEREO^L=>MONO
+sampling_audio	0xccb34	19	Edit:STEREO^R=>MONO
+sampling_audio	0xccb48	21	Edit:STEREO^L+R=>MONO
+sampling_audio	0xccb64	21	Edit:STEREO^L-R=>MONO
+sequencer_song	0xccb8c	5	Tempo
+sequencer_song	0xccb94	15	Original^tempo:
+sequencer_song	0xccbba	12	 TAP TEMPO  
+sequencer_song	0xccbc8	12	   BAR >>   
+sequencer_song	0xccbd6	12	   << BAR   
+sequencer_song	0xccc1c	12	 GO TO BAR  
+midi_program	0xccc9a	12	 [^PROGRAM^]
+sampling_audio	0xccca8	12	 [ RECORD ] 
+sequencer_song	0xcccd2	12	 [  SONG  ] 
+midi_program	0xcfc4b	13	123-NOTE OFF 
+sampling_audio	0xcfc75	13	126-MONO ON  
+midi_program	0xd04cd	16	123-ALL NOTE OFF
+sampling_audio	0xd0500	16	126-MONO MODE ON
+storage_filesystem	0xd2fba	28	   Insert Memory Card !!    
+storage_filesystem	0xd3068	28	       Disk is full!!       
+update_flash	0xd30bf	28	       File write error !!  
+storage_filesystem	0xd30f9	28	      USB<===>MPC2500 !!    
+sequencer_song	0xd316d	28	     End of sequence !!     
+sequencer_song	0xd318a	28	    Sequence is unused !!   
+sequencer_song	0xd31a7	28	  Too many bars! (999max)   
+update_flash	0xd31e1	28	   Flash ROM erase error!!  
+update_flash	0xd31fe	28	   Flash ROM write error!!  
+update_flash	0xd321b	28	   Flash ROM read  error!!  
+midi_program	0xd3238	28	    Program name exist!!    
+sampling_audio	0xd3255	28	     Sample name exist!!    
+sampling_audio	0xd3272	28	     No sample wave !!      
+sampling_audio	0xd32e6	28	     ChopShop sample !!     
+update_flash	0xd3394	28	       Erase error !!       
+legacy_compatibility	0xd33b1	28	   Not MPC2000XL file !!    
+sampling_audio	0xd33ce	28	   Not stereo sample  !!    
+sampling_audio	0xd34b6	28	Sample too big:Can't execute
+midi_program	0xd3d1d	4	MIDI
+storage_filesystem	0xd3d94	11	MEMORY CARD
+storage_filesystem	0xd3da0	11	HARD DISK  
+sampling_audio	0xd3de8	14	A^SAMPLE^^^^^^
+midi_program	0xd3df9	14	A^PROGRAM^^^^^
+midi_program	0xd3e0a	14	ALL^PROGRAMS^^
+sequencer_song	0xd3e1b	14	A^SEQUENCE^^^^
+sequencer_song	0xd3e2c	14	ALL^SEQUENCES^
+sequencer_song	0xd4450	8	AS TRACK
+midi_program	0xd44db	14	MIDI CLOCK    
+midi_program	0xd44ea	14	MIDI TIME CODE
+midi_program	0xd4508	14	MIDI CLOCK    
+midi_program	0xd4517	14	MIDI TIME CODE
+sampling_audio	0xd45b0	6	MONO L
+sampling_audio	0xd45b7	6	MONO R
+sampling_audio	0xd45be	6	STEREO
+sequencer_song	0xd47a4	13	TAP TEMPO    
+sequencer_song	0xd4970	18	TO SEQUENCE LENGTH
+sequencer_song	0xd4983	18	TO SEQUENCE END   
+midi_program	0xd4a5a	14	NOTE          
+sequencer_song	0xd4a87	14	PROGRAM CHANGE
+sequencer_song	0xd4ad2	14	TEMPO CHANGE  
+sequencer_song	0xd4af0	14	TRACK MUTE    

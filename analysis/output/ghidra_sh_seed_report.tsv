@@ -1,0 +1,4 @@
+program	mpc2500_jv313.bin
+language	SuperH4:LE:32:default
+entry	RESET_STUB	0x0	1
+entry	ENTRY_INIT	0x626	1
