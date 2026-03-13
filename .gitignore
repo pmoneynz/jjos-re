@@ -3,3 +3,4 @@
 __pycache__/
 *.pyc
 analysis/ghidra_project/
+analysis/output/*.bin
