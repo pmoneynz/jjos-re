@@ -1,0 +1,22 @@
+{
+  "timestamp_utc": "2026-03-13T05:30:54.384306+00:00",
+  "firmware": "mpc2500_jv313.bin",
+  "spec": "analysis/patch_specs/poc_startup_banner_cand01.json",
+  "spec_name": "poc_startup_banner_cand01",
+  "spec_notes": "Stage-1 startup banner patch candidate for real hardware dry-run.",
+  "input_size": 894040,
+  "output_size": 894040,
+  "input_sha256": "7a64b6c82bf47bff3f0091fa90a0c7162fc563352f1c779a2c59f9da449e66b9",
+  "output_sha256": "c887e4fc263c09d8e62e561689babe3c1832ea7748a3a7261e806d00b6c36dcd",
+  "patches": [
+    {
+      "name": "startup_version_banner",
+      "offset_hex": "0x10000",
+      "length": 47,
+      "before_hex": "4d50433235303020202020202020202056657273696f6e3d332e313320202031362d4645422d323031352020202020",
+      "after_hex": "4d50433235303020202020202020202056657273696f6e3d332e313320202043414e4449444154452d303120202020",
+      "before_ascii": "MPC2500         Version=3.13   16-FEB-2015     ",
+      "after_ascii": "MPC2500         Version=3.13   CANDIDATE-01    "
+    }
+  ]
+}

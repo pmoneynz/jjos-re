@@ -1,0 +1,12 @@
+{
+  "name": "poc_startup_banner_cand01",
+  "notes": "Stage-1 startup banner patch candidate for real hardware dry-run.",
+  "patches": [
+    {
+      "name": "startup_version_banner",
+      "offset": "0x10000",
+      "expected_ascii": "MPC2500         Version=3.13   16-FEB-2015     ",
+      "replacement_ascii": "MPC2500         Version=3.13   CANDIDATE-01    "
+    }
+  ]
+}
