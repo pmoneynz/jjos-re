@@ -79,6 +79,31 @@ Current confidence:
 - Medium confidence: they are involved in update-file loading/commit flow
 - Low confidence: they are the actual flash erase/write routines
 
+## Additional proven literal/call evidence (raw-binary extractor)
+
+A local raw-binary SuperH extractor (`analysis/extract_superh_update_path.py`) reproduces these points without depending on Ghidra runtime availability.
+
+Proven from extracted call/literal traces:
+
+- `ENTRY_INIT` includes resolved calls to:
+  - `FUN_00008c44` (`0x00000c38`)
+  - `FUN_00008ed6` (`0x00000c48`)
+  - `FUN_00008db4` (`0x00000c90`, and again at `0x00000f4a`)
+  - `FUN_00008b8c` (`0x00000e3a`)
+- `FUN_00008b8c` loads literal strings:
+  - `M25V` (`0x00009294`)
+  - `BIN` (`0x0000929c`)
+  - `MPC25T` (`0x000092a0`)
+  - `MPC2500` (`0x000092a8`)
+  - `SOS` (`0x000092b0`)
+- `ENTRY_INIT` directly loads boot-error/status strings via long literals:
+  - `File data error` (`0x00000cf4 -> 0x00007c50`)
+  - `OS data error` (`0x00000dd4 -> 0x00007c80`)
+  - `Loading OS file` (`0x00000f0e -> 0x00007cf8`)
+  - `OS file not found` (`0x0000101e -> 0x00007d14`)
+  - `Flash ROM erasing %` (`0x000008fa` and `0x00000904` -> `0x000094a0`)
+- `FUN_00008db4`, `FUN_00008ed6`, `FUN_0000844a`, `FUN_000084e2`, and `FUN_000084f8` all load literals in the `0xa50072xx` region.
+
 ## Not yet proven
 
 - Direct code references to:

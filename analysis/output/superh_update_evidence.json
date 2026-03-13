@@ -1,0 +1,965 @@
+{
+  "file_name": "mpc2500_jv313.bin",
+  "sha256": "7a64b6c82bf47bff3f0091fa90a0c7162fc563352f1c779a2c59f9da449e66b9",
+  "seed_windows": {
+    "ENTRY_INIT": {
+      "entry": 1574,
+      "start": 1574,
+      "end": 4192
+    },
+    "FUN_00008a10": {
+      "entry": 35344,
+      "start": 35344,
+      "end": 35660
+    },
+    "FUN_00008b8c": {
+      "entry": 35724,
+      "start": 35724,
+      "end": 35906
+    },
+    "FUN_00008c44": {
+      "entry": 35908,
+      "start": 35908,
+      "end": 36004
+    },
+    "FUN_00008db4": {
+      "entry": 36276,
+      "start": 36276,
+      "end": 36564
+    },
+    "FUN_00008ed6": {
+      "entry": 36566,
+      "start": 36566,
+      "end": 36608
+    },
+    "FUN_0000844a": {
+      "entry": 33866,
+      "start": 33866,
+      "end": 34016
+    },
+    "FUN_000084e2": {
+      "entry": 34018,
+      "start": 34018,
+      "end": 34036
+    },
+    "FUN_000084f8": {
+      "entry": 34040,
+      "start": 34040,
+      "end": 34108
+    },
+    "FUN_0000914c": {
+      "entry": 37196,
+      "start": 37196,
+      "end": 37286
+    }
+  },
+  "decoded_instruction_counts": {
+    "ENTRY_INIT": 1097,
+    "FUN_00008a10": 155,
+    "FUN_00008b8c": 90,
+    "FUN_00008c44": 47,
+    "FUN_00008db4": 91,
+    "FUN_00008ed6": 20,
+    "FUN_0000844a": 73,
+    "FUN_000084e2": 9,
+    "FUN_000084f8": 33,
+    "FUN_0000914c": 7
+  },
+  "entry_init": {
+    "calls": [
+      {
+        "call_site": 2056,
+        "mnemonic": "bsr",
+        "resolved_target": 528,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2072,
+        "mnemonic": "bsr",
+        "resolved_target": 528,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2078,
+        "mnemonic": "bsr",
+        "resolved_target": 528,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2096,
+        "mnemonic": "bsr",
+        "resolved_target": 528,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2150,
+        "mnemonic": "bsr",
+        "resolved_target": 1052,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2292,
+        "mnemonic": "bsr",
+        "resolved_target": 892,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2304,
+        "mnemonic": "bsr",
+        "resolved_target": 892,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2314,
+        "mnemonic": "bsr",
+        "resolved_target": 892,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2320,
+        "mnemonic": "bsr",
+        "resolved_target": 1454,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2324,
+        "mnemonic": "bsr",
+        "resolved_target": 1462,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2328,
+        "mnemonic": "bsr",
+        "resolved_target": 1454,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2332,
+        "mnemonic": "bsr",
+        "resolved_target": 1462,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2336,
+        "mnemonic": "bsr",
+        "resolved_target": 1454,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2340,
+        "mnemonic": "bsr",
+        "resolved_target": 1462,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2344,
+        "mnemonic": "bsr",
+        "resolved_target": 1454,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2348,
+        "mnemonic": "bsr",
+        "resolved_target": 1462,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2352,
+        "mnemonic": "bsr",
+        "resolved_target": 1454,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2358,
+        "mnemonic": "bsr",
+        "resolved_target": 1454,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2364,
+        "mnemonic": "bsr",
+        "resolved_target": 1454,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2368,
+        "mnemonic": "bsr",
+        "resolved_target": 1462,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2372,
+        "mnemonic": "bsr",
+        "resolved_target": 1454,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2376,
+        "mnemonic": "bsr",
+        "resolved_target": 1454,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2380,
+        "mnemonic": "bsr",
+        "resolved_target": 1502,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2392,
+        "mnemonic": "bsr",
+        "resolved_target": 1454,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2460,
+        "mnemonic": "bsr",
+        "resolved_target": 5818,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2656,
+        "mnemonic": "bsr",
+        "resolved_target": 5726,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2720,
+        "mnemonic": "bsr",
+        "resolved_target": 5726,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2736,
+        "mnemonic": "bsr",
+        "resolved_target": 5726,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2746,
+        "mnemonic": "bsr",
+        "resolved_target": 4952,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2754,
+        "mnemonic": "bsr",
+        "resolved_target": 4952,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2764,
+        "mnemonic": "bsr",
+        "resolved_target": 5176,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2774,
+        "mnemonic": "bsr",
+        "resolved_target": 5176,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2786,
+        "mnemonic": "bsr",
+        "resolved_target": 5644,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2794,
+        "mnemonic": "bsr",
+        "resolved_target": 5282,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2804,
+        "mnemonic": "bsr",
+        "resolved_target": 5536,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2814,
+        "mnemonic": "bsr",
+        "resolved_target": 5282,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2822,
+        "mnemonic": "bsr",
+        "resolved_target": 5536,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2832,
+        "mnemonic": "bsr",
+        "resolved_target": 5176,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2840,
+        "mnemonic": "bsr",
+        "resolved_target": 5176,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2848,
+        "mnemonic": "bsr",
+        "resolved_target": 5176,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2856,
+        "mnemonic": "bsr",
+        "resolved_target": 5176,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2888,
+        "mnemonic": "bsr",
+        "resolved_target": 4442,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2902,
+        "mnemonic": "bsr",
+        "resolved_target": 4254,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2926,
+        "mnemonic": "bsr",
+        "resolved_target": 4648,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 2932,
+        "mnemonic": "bsr",
+        "resolved_target": 5750,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3004,
+        "mnemonic": "bsr",
+        "resolved_target": 4254,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3008,
+        "mnemonic": "bsr",
+        "resolved_target": 5750,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3048,
+        "mnemonic": "bsr",
+        "resolved_target": 1542,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3096,
+        "mnemonic": "bsr",
+        "resolved_target": 1522,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3102,
+        "mnemonic": "jsr",
+        "register": 2,
+        "resolved_target": 34110,
+        "resolution_source": 3100,
+        "status": "proven"
+      },
+      {
+        "call_site": 3112,
+        "mnemonic": "jsr",
+        "register": 2,
+        "resolved_target": 34726,
+        "resolution_source": 3110,
+        "status": "proven"
+      },
+      {
+        "call_site": 3128,
+        "mnemonic": "jsr",
+        "register": 7,
+        "resolved_target": 35908,
+        "resolution_source": 3124,
+        "status": "proven"
+      },
+      {
+        "call_site": 3144,
+        "mnemonic": "jsr",
+        "register": 2,
+        "resolved_target": 36566,
+        "resolution_source": 3138,
+        "status": "proven"
+      },
+      {
+        "call_site": 3156,
+        "mnemonic": "bsr",
+        "resolved_target": 5818,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3170,
+        "mnemonic": "bsr",
+        "resolved_target": 4254,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3174,
+        "mnemonic": "bsr",
+        "resolved_target": 5750,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3206,
+        "mnemonic": "jsr",
+        "register": 7,
+        "resolved_target": 35908,
+        "resolution_source": 3184,
+        "status": "proven"
+      },
+      {
+        "call_site": 3216,
+        "mnemonic": "jsr",
+        "register": 6,
+        "resolved_target": 36276,
+        "resolution_source": 3212,
+        "status": "proven"
+      },
+      {
+        "call_site": 3238,
+        "mnemonic": "jsr",
+        "register": 2,
+        "resolved_target": null,
+        "resolution_source": null,
+        "status": "hypothesis"
+      },
+      {
+        "call_site": 3320,
+        "mnemonic": "bsr",
+        "resolved_target": 4254,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3324,
+        "mnemonic": "bsr",
+        "resolved_target": 5750,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3330,
+        "mnemonic": "bsr",
+        "resolved_target": 1542,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3364,
+        "mnemonic": "bsr",
+        "resolved_target": 5818,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3374,
+        "mnemonic": "bsr",
+        "resolved_target": 1522,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3386,
+        "mnemonic": "bsr",
+        "resolved_target": 5818,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3470,
+        "mnemonic": "bsr",
+        "resolved_target": 5818,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3480,
+        "mnemonic": "bsr",
+        "resolved_target": 1522,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3526,
+        "mnemonic": "jsr",
+        "register": 5,
+        "resolved_target": null,
+        "resolution_source": null,
+        "status": "hypothesis"
+      },
+      {
+        "call_site": 3536,
+        "mnemonic": "bsr",
+        "resolved_target": 5726,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3544,
+        "mnemonic": "bsr",
+        "resolved_target": 4254,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3548,
+        "mnemonic": "bsr",
+        "resolved_target": 5750,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3554,
+        "mnemonic": "bsr",
+        "resolved_target": 1542,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3590,
+        "mnemonic": "bsr",
+        "resolved_target": 5726,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3598,
+        "mnemonic": "bsr",
+        "resolved_target": 4254,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3604,
+        "mnemonic": "jsr",
+        "register": 2,
+        "resolved_target": 34110,
+        "resolution_source": 3602,
+        "status": "proven"
+      },
+      {
+        "call_site": 3626,
+        "mnemonic": "jsr",
+        "register": 2,
+        "resolved_target": 34726,
+        "resolution_source": 3624,
+        "status": "proven"
+      },
+      {
+        "call_site": 3642,
+        "mnemonic": "jsr",
+        "register": 2,
+        "resolved_target": 35724,
+        "resolution_source": 3640,
+        "status": "proven"
+      },
+      {
+        "call_site": 3664,
+        "mnemonic": "bsr",
+        "resolved_target": 4254,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3672,
+        "mnemonic": "bsr",
+        "resolved_target": 4254,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3682,
+        "mnemonic": "bsr",
+        "resolved_target": 4254,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3690,
+        "mnemonic": "jsr",
+        "register": 2,
+        "resolved_target": 37196,
+        "resolution_source": 3688,
+        "status": "proven"
+      },
+      {
+        "call_site": 3718,
+        "mnemonic": "bsr",
+        "resolved_target": 4254,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3732,
+        "mnemonic": "bsr",
+        "resolved_target": 4254,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3756,
+        "mnemonic": "bsr",
+        "resolved_target": 4952,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3768,
+        "mnemonic": "bsr",
+        "resolved_target": 5644,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3778,
+        "mnemonic": "bsr",
+        "resolved_target": 4254,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3782,
+        "mnemonic": "bsr",
+        "resolved_target": 5750,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3804,
+        "mnemonic": "bsr",
+        "resolved_target": 1542,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3850,
+        "mnemonic": "bsr",
+        "resolved_target": 5726,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3860,
+        "mnemonic": "bsr",
+        "resolved_target": 4254,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3864,
+        "mnemonic": "bsr",
+        "resolved_target": 5750,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3896,
+        "mnemonic": "bsr",
+        "resolved_target": 5818,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 3914,
+        "mnemonic": "jsr",
+        "register": 2,
+        "resolved_target": 36276,
+        "resolution_source": 3912,
+        "status": "proven"
+      },
+      {
+        "call_site": 3926,
+        "mnemonic": "jsr",
+        "register": 3,
+        "resolved_target": 2768269484,
+        "resolution_source": 3924,
+        "status": "proven"
+      },
+      {
+        "call_site": 3938,
+        "mnemonic": "bsr",
+        "resolved_target": 5818,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 4086,
+        "mnemonic": "jsr",
+        "register": 7,
+        "resolved_target": null,
+        "resolution_source": null,
+        "status": "hypothesis"
+      },
+      {
+        "call_site": 4098,
+        "mnemonic": "bsr",
+        "resolved_target": 1522,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 4108,
+        "mnemonic": "bsr",
+        "resolved_target": 5884,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 4112,
+        "mnemonic": "bsr",
+        "resolved_target": 5750,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 4118,
+        "mnemonic": "bsr",
+        "resolved_target": 1542,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 4130,
+        "mnemonic": "bsr",
+        "resolved_target": 4254,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 4134,
+        "mnemonic": "bsr",
+        "resolved_target": 5750,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 4140,
+        "mnemonic": "bsr",
+        "resolved_target": 1542,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 4150,
+        "mnemonic": "bsr",
+        "resolved_target": 5884,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 4166,
+        "mnemonic": "bsr",
+        "resolved_target": 4254,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 4176,
+        "mnemonic": "bsr",
+        "resolved_target": 4442,
+        "resolution_source": "relative",
+        "status": "proven"
+      },
+      {
+        "call_site": 4186,
+        "mnemonic": "bsr",
+        "resolved_target": 4442,
+        "resolution_source": "relative",
+        "status": "proven"
+      }
+    ],
+    "required_call_checks": [
+      {
+        "target": 35908,
+        "found": true,
+        "status": "proven"
+      },
+      {
+        "target": 36566,
+        "found": true,
+        "status": "proven"
+      },
+      {
+        "target": 36276,
+        "found": true,
+        "status": "proven"
+      },
+      {
+        "target": 35724,
+        "found": true,
+        "status": "proven"
+      }
+    ],
+    "string_literal_refs": {
+      "File data error": {
+        "target": 31824,
+        "refs": [
+          3316
+        ],
+        "status": "proven"
+      },
+      "OS data error": {
+        "target": 31872,
+        "refs": [
+          3540
+        ],
+        "status": "proven"
+      },
+      "Loading OS file": {
+        "target": 31992,
+        "refs": [
+          3854
+        ],
+        "status": "proven"
+      },
+      "OS file not found": {
+        "target": 32020,
+        "refs": [
+          4126
+        ],
+        "status": "proven"
+      },
+      "Flash ROM erasing %": {
+        "target": 38048,
+        "refs": [
+          2298,
+          2308
+        ],
+        "status": "proven"
+      }
+    }
+  },
+  "fun_8b8c": {
+    "literal_strings": [
+      {
+        "address": 37524,
+        "text": "M25V",
+        "loaded_at": 35760
+      },
+      {
+        "address": 37532,
+        "text": "BIN",
+        "loaded_at": 35838
+      },
+      {
+        "address": 37536,
+        "text": "MPC25T",
+        "loaded_at": 35792
+      },
+      {
+        "address": 37544,
+        "text": "MPC2500",
+        "loaded_at": 35852
+      },
+      {
+        "address": 37552,
+        "text": "SOS",
+        "loaded_at": 35868
+      }
+    ],
+    "literal_texts": [
+      "BIN",
+      "M25V",
+      "MPC2500",
+      "MPC25T",
+      "SOS"
+    ],
+    "expected_set_all_found": true
+  },
+  "mmio_touchpoints": {
+    "FUN_00008db4": [
+      2768269872,
+      2768269892,
+      2768269916,
+      2768269960,
+      2768269968
+    ],
+    "FUN_00008ed6": [
+      2768269872,
+      2768269968
+    ],
+    "FUN_0000844a": [
+      2768269904
+    ],
+    "FUN_000084e2": [
+      2768269956,
+      2768269964,
+      2768269968
+    ],
+    "FUN_000084f8": [
+      2768269876,
+      2768269880,
+      2768269896,
+      2768269920,
+      2768269968
+    ]
+  },
+  "hypotheses": [
+    "No direct long-literal references were extracted for `Wrong file` / flash erase-write-read error strings in the boot block; these are likely reached indirectly through table/index flow.",
+    "The `0xa50072xx` touchpoints in `FUN_00008db4`/`FUN_00008ed6`/`FUN_000084x` strongly indicate low-level transaction control, but this extractor does not yet prove exact AM29LV641 erase/program command semantics."
+  ]
+}
