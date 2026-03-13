@@ -1,41 +1,52 @@
 # JJOS Reverse Engineering Workflow
 
-This directory turns the one-off binary inspection into something repeatable.
+This directory contains repeatable tooling and artifacts for MPC2500/JJOS firmware analysis and patch trials.
+
+## Current Ground Truth
+
+- Working architecture/import path: `SuperH4:LE:32:default` with image base `0x00000000`
+- Proven early update owner: `ENTRY_INIT` at `0x00000626`
+- Proven first filename gate: `FUN_00008c44`
+- Strong alternate filename validator candidate: `FUN_00008b8c`
+
+Primary evidence lives in:
+
+- `analysis/output/ghidra_sh_findings.md`
+- `analysis/output/ghidra_sh_update_map.md`
 
 ## Files
 
-- `scan_firmware.py`: extracts structural data from `mpc2500_jv313.bin`
-- `output/report.md`: current human-readable summary
-- `output/summary.json`: machine-readable scan output
-- `output/strings.tsv`: all printable strings with file offsets
-- `output/interesting_strings.tsv`: keyword-filtered strings grouped into RE-relevant categories
+- `scan_firmware.py`
+  - static extractor for strings and coarse structure
+- `firmware_patch_tool.py`
+  - deterministic patch helper with strict expected-byte checks
+- `patch_specs/`
+  - versioned JSON patch specs for reproducible experiments
+- `PRACTICAL_PATCH_PATH.md`
+  - stage-gated path from patch generation to controlled hardware trials
+- `output/`
+  - generated reports, manifests, and scan artifacts
 
 ## Recommended Workflow
 
-1. Start with the static scan:
+1. Reconfirm structural baseline (optional but useful):
    - `python3 analysis/scan_firmware.py mpc2500_jv313.bin`
-2. Review the generated report and strings:
-   - `analysis/output/report.md`
-   - `analysis/output/interesting_strings.tsv`
-   - `analysis/output/strings.tsv`
-3. Use the strongest current import hypothesis in a disassembler:
-   - architecture: `68000:BE:32:Coldfire`
-   - base address: `0x09000000`
-4. Pivot on the update strings first:
-   - boot/update text around `0x7BE0-0x8130`
-   - flash progress text at `0x94A0` and `0x94B8`
-   - late UI/update text around `0xC7D40-0xD3230`
-5. Do not start with behavior changes.
-   - First prove you can make a same-length cosmetic patch.
-   - Then identify the integrity check that accepts or rejects the image.
+2. Read current SuperH findings:
+   - `analysis/output/ghidra_sh_findings.md`
+   - `analysis/output/ghidra_sh_update_map.md`
+3. Inspect patch-safe targets:
+   - `python3 analysis/firmware_patch_tool.py inspect --firmware mpc2500_jv313.bin`
+4. Build a deterministic same-length patch candidate:
+   - `python3 analysis/firmware_patch_tool.py apply --firmware mpc2500_jv313.bin --spec analysis/patch_specs/poc_late_os_update.json --output analysis/output/poc_late_os_update.bin --manifest analysis/output/poc_late_os_update_manifest.json`
+5. Execute hardware tests using the stage gates in:
+   - `analysis/PRACTICAL_PATCH_PATH.md`
 
-## Local Tooling
+## Discipline
 
-If you want lightweight M68k probing without full Ghidra setup, a workspace-local venv with `capstone` is enough:
-
-```bash
-python3 -m venv .venv
-./.venv/bin/pip install capstone
-```
-
-Ghidra support for ColdFire is present locally, but Java still needs to be configured before headless analysis will work.
+- Do not make uncontrolled binary edits.
+- Every hardware trial should have:
+  - input hash
+  - output hash
+  - patch spec
+  - manifest
+  - observed device result

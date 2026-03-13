@@ -311,11 +311,10 @@ def write_report(path: Path, summary: dict[str, object]) -> None:
         "",
         "## Likely Architecture / Mapping",
         "",
-        "- Strongest image-base candidate: `0x09000000`",
-        f"- Evidence: `{best_base['mapped_word_count']}` aligned big-endian words map back inside the file under that base.",
-        "- Offset `0x0` looks compatible with a ColdFire/M68k-style reset vector layout: initial SP `0x01d02b40`, initial PC `0x09000000`.",
-        "- Ghidra on this machine includes `68000:BE:32:Coldfire`, which matches the most likely family.",
-        "- Secondary prefixes `0x08xxxxxx` and `0x0Axxxxxx` also appear, which suggests additional mapped regions, relocation domains, or mixed resource/code tables.",
+        "- Authoritative working RE path is currently SuperH (`SuperH4:LE:32:default`, base `0x00000000`) from the Ghidra artifacts.",
+        "- This script's pointer-density/base heuristics are coarse and should be treated as supporting context only, not architecture proof.",
+        f"- Top legacy big-endian base candidate in this static scan: `{hex(best_base['base'])}` with `{best_base['mapped_word_count']}` mapped words.",
+        "- Practical rule: rely on `analysis/output/ghidra_sh_findings.md` for architecture and control-flow claims.",
         "",
         "## Candidate Validation / Checksum Areas",
         "",
@@ -351,9 +350,9 @@ def write_report(path: Path, summary: dict[str, object]) -> None:
         lines.extend(
             [
                 "",
-                "## ColdFire Probe",
+                "## Optional Legacy Probe",
                 "",
-                "- Optional Capstone probing was enabled and produced valid M68k decodes in several early regions. This is suggestive, not conclusive.",
+                "- Optional Capstone M68k probing is kept only as a legacy heuristic and is not architecture evidence.",
             ]
         )
 
