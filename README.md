@@ -99,6 +99,16 @@ Use a strict, reproducible patch workflow before any hardware flash attempt:
 
 The patch helper refuses to patch unless expected bytes match exactly, which prevents drift and accidental corruption.
 
+## Manual Knowledge Base
+
+Manual-derived facts and constraints are tracked in:
+
+- `analysis/knowledge_base/MANUAL_SOURCES.md`
+- `analysis/knowledge_base/MANUAL_KNOWLEDGE_SUMMARY.md`
+- `analysis/knowledge_base/manual_facts.json`
+
+Use these before designing hardware trials so media, update-path, and USB assumptions stay consistent with documented behavior.
+
 ## Caution
 
 This repo includes a proprietary firmware binary because that was explicitly requested for publication. That may have IP/legal implications depending on jurisdiction and intended use.

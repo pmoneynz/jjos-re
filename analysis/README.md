@@ -26,6 +26,8 @@ Primary evidence lives in:
   - stage-gated path from patch generation to controlled hardware trials
 - `MPC2500_OS_RE_CHECKLIST.md`
   - pass/fail-gated execution checklist for autonomous RE agents
+- `knowledge_base/`
+  - manual-ingested facts with confidence tags and source citations
 - `templates/`
   - structured JSON templates for gate status and hardware trial outcomes
 - `output/`
@@ -38,11 +40,14 @@ Primary evidence lives in:
 2. Read current SuperH findings:
    - `analysis/output/ghidra_sh_findings.md`
    - `analysis/output/ghidra_sh_update_map.md`
-3. Inspect patch-safe targets:
+3. Load manual-backed constraints and hardware facts:
+   - `analysis/knowledge_base/MANUAL_KNOWLEDGE_SUMMARY.md`
+   - `analysis/knowledge_base/manual_facts.json`
+4. Inspect patch-safe targets:
    - `python3 analysis/firmware_patch_tool.py inspect --firmware mpc2500_jv313.bin`
-4. Build a deterministic same-length patch candidate:
+5. Build a deterministic same-length patch candidate:
    - `python3 analysis/firmware_patch_tool.py apply --firmware mpc2500_jv313.bin --spec analysis/patch_specs/poc_late_os_update.json --output hardware_candidates/poc_late_os_update.bin --manifest analysis/output/poc_late_os_update_manifest.json`
-5. Execute hardware tests using the stage gates in:
+6. Execute hardware tests using the stage gates in:
    - `analysis/MPC2500_OS_RE_CHECKLIST.md`
 
 ## Discipline

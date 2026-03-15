@@ -55,6 +55,20 @@ If any artifact is missing: **FAIL** the trial.
 - Evidence:
   - baseline hash recorded in trial notes/log
 
+### Step 0.3 - Manual knowledge base preload
+- Action:
+  - read:
+    - `analysis/knowledge_base/MANUAL_SOURCES.md`
+    - `analysis/knowledge_base/MANUAL_KNOWLEDGE_SUMMARY.md`
+    - `analysis/knowledge_base/manual_facts.json`
+- PASS:
+  - manual constraints relevant to current task are listed in session notes
+  - any medium-confidence facts are explicitly marked as hypotheses
+- FAIL:
+  - task proceeds using assumptions contradicted by manual facts
+- Evidence:
+  - short "manual constraints applied" list in gate status output
+
 ---
 
 ## Phase 1 - Toolchain Validation Gate
