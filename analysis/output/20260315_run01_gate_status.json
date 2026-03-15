@@ -1,0 +1,219 @@
+{
+  "session_id": "20260315-run-01",
+  "agent": "gpt-5.3-codex-high",
+  "checklist_version": "analysis/MPC2500_OS_RE_CHECKLIST.md",
+  "gates": [
+    {
+      "step_id": "0.1",
+      "name": "Repository and branch sanity",
+      "status": "PASS",
+      "evidence": [
+        "Command: git status --short --branch -> '## cursor/mpc2500-os-reverse-engineering-9f17'",
+        "No unintended working-tree modifications existed before this run."
+      ],
+      "notes": "Branch matches assigned task branch."
+    },
+    {
+      "step_id": "0.2",
+      "name": "Baseline firmware fingerprint",
+      "status": "PASS",
+      "evidence": [
+        "Command: sha256sum /workspace/analysis/mpc2500.bin -> 6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5",
+        "analysis/output/summary.json regenerated with file_name 'mpc2500.bin' and matching sha256."
+      ],
+      "notes": "Run baseline explicitly bound to user-specified target firmware analysis/mpc2500.bin."
+    },
+    {
+      "step_id": "0.3",
+      "name": "Manual knowledge base preload",
+      "status": "PASS",
+      "evidence": [
+        "Read: analysis/knowledge_base/MANUAL_SOURCES.md",
+        "Read: analysis/knowledge_base/MANUAL_KNOWLEDGE_SUMMARY.md",
+        "Read: analysis/knowledge_base/manual_facts.json"
+      ],
+      "notes": "Manual constraints applied: CF-first update path, USB used as media transport (not direct flash), Window-button update entry, and AM29LV641 family relevance; medium-confidence facts treated as hypotheses."
+    },
+    {
+      "step_id": "1.1",
+      "name": "Patch tooling smoke test",
+      "status": "PASS",
+      "evidence": [
+        "Command: python3 analysis/firmware_patch_tool.py inspect --firmware analysis/mpc2500.bin",
+        "Output included firmware hash and readable boot/update target strings."
+      ],
+      "notes": "Late offsets in KNOWN_PATCH_TARGETS were out-of-range for this image, which is consistent with a different firmware layout and was documented."
+    },
+    {
+      "step_id": "1.2",
+      "name": "Static scan regeneration sanity",
+      "status": "PASS",
+      "evidence": [
+        "Command: python3 analysis/scan_firmware.py analysis/mpc2500.bin exited cleanly.",
+        "Artifacts regenerated: analysis/output/report.md and analysis/output/summary.json."
+      ],
+      "notes": "Regeneration successful for target binary."
+    },
+    {
+      "step_id": "2.1",
+      "name": "Architecture consistency check",
+      "status": "PASS",
+      "evidence": [
+        "Read: analysis/output/ghidra_sh_findings.md",
+        "Read: analysis/output/ghidra_sh_update_map.md",
+        "analysis/output/interesting_strings.tsv confirms update/flash string block at expected boot-region offsets (0x7C9C/0x7CF8/0x7D14)."
+      ],
+      "notes": "No stronger contradictory evidence against SuperH path was observed in this run; applicability to this exact hash remains medium-confidence until direct re-import proof is regenerated."
+    },
+    {
+      "step_id": "2.2",
+      "name": "Update spine verification",
+      "status": "PASS",
+      "evidence": [
+        "analysis/output/ghidra_sh_update_map.md lists ENTRY_INIT (0x626), FUN_00008c44 (0x8c44), FUN_00008b8c (0x8b8c), FUN_00008ed6 (0x8ed6), FUN_00008db4 (0x8db4) with callsites.",
+        "analysis/output/ghidra_sh_findings.md documents same chain and decision points."
+      ],
+      "notes": "Call-chain evidence remains reproducible in current project artifacts; exact per-hash reconfirmation for mpc2500.bin should be rerun in Ghidra as follow-up hardening."
+    },
+    {
+      "step_id": "3.1",
+      "name": "Patch target classification",
+      "status": "PASS",
+      "evidence": [
+        "Target: ASCII UI label 'OS update' at 0xB1B28 in analysis/mpc2500.bin.",
+        "Classification recorded in analysis/output/patch_experiment_log.md Trial 0003."
+      ],
+      "notes": "Classified as cosmetic/safe because only static UI text bytes were altered with no control-flow edits."
+    },
+    {
+      "step_id": "3.2",
+      "name": "Spec construction (single variable)",
+      "status": "PASS",
+      "evidence": [
+        "Spec: analysis/patch_specs/t0003_mpc2500_late_os_update.json",
+        "Single patch only; expected_ascii and replacement_ascii are both 9 bytes."
+      ],
+      "notes": "Single-variable discipline preserved."
+    },
+    {
+      "step_id": "3.3",
+      "name": "Deterministic apply",
+      "status": "PASS",
+      "evidence": [
+        "Command: python3 analysis/firmware_patch_tool.py apply --firmware analysis/mpc2500.bin --spec analysis/patch_specs/t0003_mpc2500_late_os_update.json --output hardware_candidates/mpc2500_t0003_late_os_update.bin --manifest analysis/output/t0003_mpc2500_late_os_update_manifest.json",
+        "Tool output: applied_patches=1 with input/output SHA-256 hashes.",
+        "Manifest generated: analysis/output/t0003_mpc2500_late_os_update_manifest.json"
+      ],
+      "notes": "Input/output sizes remained equal (784916 bytes)."
+    },
+    {
+      "step_id": "4.1",
+      "name": "Byte-level verification",
+      "status": "PASS",
+      "evidence": [
+        "Python diff check reported contiguous delta only at 0xB1B2B..0xB1B30.",
+        "Manifest records before/after bytes at 0xB1B28 with intended ASCII replacement."
+      ],
+      "notes": "Only intended byte span changed; unchanged prefix bytes ('OS ') explain 6 changed values for a 9-byte field."
+    },
+    {
+      "step_id": "4.2",
+      "name": "Candidate registry update",
+      "status": "PASS",
+      "evidence": [
+        "Updated: analysis/output/patch_experiment_log.md",
+        "Added Trial 0003 with goal, hashes, offsets, before/after bytes, and status."
+      ],
+      "notes": "Trial log is complete for static candidate stage."
+    },
+    {
+      "step_id": "5.1",
+      "name": "Media and filename discipline",
+      "status": "FAIL",
+      "evidence": [
+        "No physical media preparation was executed in this environment.",
+        "No operator hardware notes captured for media filesystem/filename setup."
+      ],
+      "notes": "Hard stop triggered per checklist: cannot proceed to 5.2+ without documented media prep."
+    },
+    {
+      "step_id": "5.2",
+      "name": "Device behavior capture",
+      "status": "SKIP",
+      "evidence": [
+        "Skipped because gate 5.1 failed."
+      ],
+      "notes": ""
+    },
+    {
+      "step_id": "5.3",
+      "name": "Safety condition",
+      "status": "SKIP",
+      "evidence": [
+        "Skipped because gate 5.1 failed."
+      ],
+      "notes": ""
+    },
+    {
+      "step_id": "6.1",
+      "name": "Matrix execution quality",
+      "status": "SKIP",
+      "evidence": [
+        "Skipped because gate 5.1 failed."
+      ],
+      "notes": ""
+    },
+    {
+      "step_id": "6.2",
+      "name": "Decision output",
+      "status": "SKIP",
+      "evidence": [
+        "Skipped because gate 5.1 failed."
+      ],
+      "notes": ""
+    },
+    {
+      "step_id": "7.1",
+      "name": "Error string branch mapping",
+      "status": "SKIP",
+      "evidence": [
+        "Skipped because gate 5.1 failed."
+      ],
+      "notes": ""
+    },
+    {
+      "step_id": "7.2",
+      "name": "Flash routine proof",
+      "status": "SKIP",
+      "evidence": [
+        "Skipped because gate 5.1 failed."
+      ],
+      "notes": ""
+    },
+    {
+      "step_id": "8.1",
+      "name": "Readiness decision",
+      "status": "SKIP",
+      "evidence": [
+        "Skipped because gate 5.1 failed."
+      ],
+      "notes": ""
+    },
+    {
+      "step_id": "8.2",
+      "name": "First logic patch protocol",
+      "status": "SKIP",
+      "evidence": [
+        "Skipped because gate 5.1 failed."
+      ],
+      "notes": ""
+    }
+  ],
+  "summary": {
+    "pass_count": 12,
+    "fail_count": 1,
+    "skip_count": 8,
+    "hard_blocker": "5.1 Media and filename discipline failed due no hardware media preparation evidence.",
+    "next_priority_gate": "5.1"
+  }
+}

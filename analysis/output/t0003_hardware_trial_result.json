@@ -1,0 +1,27 @@
+{
+  "trial_id": "T0003",
+  "date_utc": "2026-03-15",
+  "operator": "gpt-5.3-codex-high",
+  "device": "MPC2500",
+  "media": {
+    "type": "CF",
+    "filesystem": "other",
+    "filename_used": "MPC2500.SOS"
+  },
+  "input_firmware_sha256": "6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5",
+  "candidate_firmware_sha256": "e54040ef75cb5da75a0d4a7be2bcac96d6e163804b21b7d10865b70285d20099",
+  "candidate_path": "hardware_candidates/mpc2500_t0003_late_os_update.bin",
+  "manifest_path": "analysis/output/t0003_mpc2500_late_os_update_manifest.json",
+  "expected_behavior": "Updater UI should show modified label text 'OS MOD V3' if candidate is accepted through dry-run load path.",
+  "observed_behavior": "No hardware trial executed in this environment; media prep and on-device load attempt were not performed.",
+  "result": "unknown",
+  "error_text_observed": "",
+  "flash_commit_reached": false,
+  "flash_commit_executed": false,
+  "evidence": {
+    "photos": [],
+    "videos": [],
+    "notes": "Gate 5.1 failed due missing documented media preparation and absent physical hardware execution evidence."
+  },
+  "next_action": "Prepare controlled CF media, document filesystem + filename, and capture dry-run acceptance/rejection evidence on real MPC2500 hardware."
+}

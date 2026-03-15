@@ -46,3 +46,28 @@
 - Candidate produced and byte-verified in this workspace.
 - Awaiting real MPC2500 hardware outcome evidence.
 
+## Trial 0003 - mpc2500.bin Late OS Update Label Patch
+
+- Date (UTC): 2026-03-15
+- Goal: generate a deterministic single-variable cosmetic candidate for `analysis/mpc2500.bin`.
+- Risk classification: cosmetic (safe) — modifies a late UI label string (`OS update`) with same-length bytes only.
+- Input firmware: `analysis/mpc2500.bin`
+- Input SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
+- Patch spec: `analysis/patch_specs/t0003_mpc2500_late_os_update.json`
+- Candidate binary: `hardware_candidates/mpc2500_t0003_late_os_update.bin`
+- Output SHA-256: `e54040ef75cb5da75a0d4a7be2bcac96d6e163804b21b7d10865b70285d20099`
+- Manifest: `analysis/output/t0003_mpc2500_late_os_update_manifest.json`
+
+### Byte-level change
+
+- Offset: `0xB1B28`
+- Before: `OS update` (`4f5320757064617465`)
+- After: `OS MOD V3` (`4f53204d4f44205633`)
+- Length preserved: yes (`9` bytes)
+- Byte-level verification: only 6 byte values changed (contiguous range `0xB1B2B`..`0xB1B30`), consistent with replacing `update` -> `MOD V3` while keeping `OS ` unchanged.
+
+### Current status
+
+- Candidate generated and manifested in this workspace.
+- No hardware media preparation or on-device dry-run evidence captured yet.
+
