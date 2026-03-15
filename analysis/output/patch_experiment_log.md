@@ -83,7 +83,7 @@
 - Output SHA-256: `e54040ef75cb5da75a0d4a7be2bcac96d6e163804b21b7d10865b70285d20099`
 - Manifest: `analysis/output/t0004_mpc2500_late_os_update_manifest.json`
 - Media image: `hardware_candidates/t0004_cf_fat16.img` (FAT16, volume label `MPCCF004`)
-- Controlled updater filename on media root: `MPC2500.SOS`
+- Controlled updater filename on prepared media root: `MPC2500.SOS`
 - Media image SHA-256: `5be262f219261cc4c7211aee0ff413d31d4d1022452b713a057cb18199fb473f`
 
 ### Byte-level change
@@ -97,5 +97,6 @@
 
 - Gate 5.1 evidence completed via host-side FAT16 media preparation and filename verification.
 - Operator-reported hardware outcome: `mpc2500_t0004_late_os_update.bin` loads and runs successfully on MPC2500.
-- Artifact gap remains: no in-repo photo/video evidence references captured for Gate 5.2 compliance.
+- User-provided screenshot evidence references are now documented in `analysis/output/t0004_hardware_capture_notes.md`.
+- Hardware screenshots show file selection/confirmation path using `mpc2500.update`; candidate-specific visual marker (`OS MOD V3`) is not shown in those captures.
 
