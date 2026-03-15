@@ -96,5 +96,6 @@
 ### Current status
 
 - Gate 5.1 evidence completed via host-side FAT16 media preparation and filename verification.
-- Gate 5.2 remains pending/failed in this environment due missing physical device photo/video capture.
+- Operator-reported hardware outcome: `mpc2500_t0004_late_os_update.bin` loads and runs successfully on MPC2500.
+- Artifact gap remains: no in-repo photo/video evidence references captured for Gate 5.2 compliance.
 
