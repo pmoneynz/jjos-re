@@ -1,0 +1,42 @@
+{
+  "matrix_id": "M0001",
+  "target_firmware": {
+    "path": "analysis/mpc2500.bin",
+    "sha256": "6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5"
+  },
+  "candidates": [
+    {
+      "trial_id": "T0004",
+      "class": "late_ui_string_patch",
+      "spec_path": "analysis/patch_specs/t0004_mpc2500_late_os_update.json",
+      "manifest_path": "analysis/output/t0004_mpc2500_late_os_update_manifest.json",
+      "hardware_result_path": "analysis/output/t0004_hardware_trial_result.json",
+      "result": "accepted"
+    },
+    {
+      "trial_id": "T0005",
+      "class": "startup_banner_patch",
+      "spec_path": "analysis/patch_specs/t0005_mpc2500_startup_banner_matrix.json",
+      "manifest_path": "analysis/output/t0005_mpc2500_startup_banner_manifest.json",
+      "hardware_result_path": "analysis/output/t0005_hardware_trial_result.json",
+      "result": "unknown"
+    },
+    {
+      "trial_id": "T0006",
+      "class": "single_byte_neutral_region_patch",
+      "spec_path": "analysis/patch_specs/t0006_mpc2500_neutral_byte_matrix.json",
+      "manifest_path": "analysis/output/t0006_mpc2500_neutral_byte_manifest.json",
+      "hardware_result_path": "analysis/output/t0006_hardware_trial_result.json",
+      "result": "unknown"
+    },
+    {
+      "trial_id": "T0007",
+      "class": "control_original",
+      "spec_path": "analysis/patch_specs/t0007_mpc2500_control_original.json",
+      "manifest_path": "analysis/output/t0007_mpc2500_control_manifest.json",
+      "hardware_result_path": "analysis/output/t0007_hardware_trial_result.json",
+      "result": "unknown"
+    }
+  ],
+  "status": "matrix_artifacts_complete_hardware_partial"
+}

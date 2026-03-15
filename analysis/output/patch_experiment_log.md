@@ -100,3 +100,78 @@
 - User-provided screenshot evidence references are now documented in `analysis/output/t0004_hardware_capture_notes.md`.
 - Hardware screenshots show file selection/confirmation path using `mpc2500.update`; candidate-specific visual marker (`OS MOD V3`) is not shown in those captures.
 
+## Trial 0005 - Matrix B Startup Banner Patch
+
+- Date (UTC): 2026-03-15
+- Goal: create startup-banner matrix candidate for integrity characterization.
+- Risk classification: cosmetic (safe) — same-length text edit in startup banner string block.
+- Input firmware: `analysis/mpc2500.bin`
+- Input SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
+- Patch spec: `analysis/patch_specs/t0005_mpc2500_startup_banner_matrix.json`
+- Candidate binary: `hardware_candidates/mpc2500_t0005_startup_banner_matrix.bin`
+- Output SHA-256: `1dafc6e8285faa3c532f2e54df286175cbcb136dc9558b5c905a70fc0aeb0040`
+- Manifest: `analysis/output/t0005_mpc2500_startup_banner_manifest.json`
+
+### Byte-level change
+
+- Offset: `0x10000`
+- Before: `MPC2500         Version=1.24   30-July-2008     `
+- After: `MPC2500         Version=1.24   MATRIX-B-05      `
+- Length preserved: yes (`48` bytes)
+- Byte-level verification: 11 bytes changed (`0x1001F..0x1002A`).
+
+### Current status
+
+- Candidate generated and manifested.
+- Hardware outcome pending (`analysis/output/t0005_hardware_trial_result.json`).
+
+## Trial 0006 - Matrix C Neutral-Region Single-Byte Patch
+
+- Date (UTC): 2026-03-15
+- Goal: create non-UI single-byte matrix candidate to test broad integrity behavior.
+- Risk classification: moderate/high (neutral-region hypothesis) — one-byte edit in long zero-filled region, functional impact unknown until hardware run.
+- Input firmware: `analysis/mpc2500.bin`
+- Input SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
+- Patch spec: `analysis/patch_specs/t0006_mpc2500_neutral_byte_matrix.json`
+- Candidate binary: `hardware_candidates/mpc2500_t0006_neutral_byte_matrix.bin`
+- Output SHA-256: `14bf5aa37b7aef59fba0d828d2f5e1fce1cc9fb8afe128a7ef1a1370ef786219`
+- Manifest: `analysis/output/t0006_mpc2500_neutral_byte_manifest.json`
+
+### Byte-level change
+
+- Offset: `0x9500`
+- Before: `00`
+- After: `01`
+- Length preserved: yes (`1` byte)
+- Byte-level verification: exactly one byte changed.
+
+### Current status
+
+- Candidate generated and manifested.
+- Hardware outcome pending (`analysis/output/t0006_hardware_trial_result.json`).
+
+## Trial 0007 - Matrix Control / Original
+
+- Date (UTC): 2026-03-15
+- Goal: create reproducible control candidate artifact with no effective binary change.
+- Risk classification: control (safe) — explicit no-op patch keeps binary byte-identical.
+- Input firmware: `analysis/mpc2500.bin`
+- Input SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
+- Patch spec: `analysis/patch_specs/t0007_mpc2500_control_original.json`
+- Candidate binary: `hardware_candidates/mpc2500_t0007_control_original.bin`
+- Output SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
+- Manifest: `analysis/output/t0007_mpc2500_control_manifest.json`
+
+### Byte-level change
+
+- Offset: `0x7C9C`
+- Before: `3d`
+- After: `3d`
+- Length preserved: yes (`1` byte)
+- Byte-level verification: zero byte differences between input and output candidate.
+
+### Current status
+
+- Control candidate generated and manifested.
+- Hardware outcome pending (`analysis/output/t0007_hardware_trial_result.json`).
+

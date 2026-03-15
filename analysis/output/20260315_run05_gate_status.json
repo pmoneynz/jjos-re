@@ -1,0 +1,72 @@
+{
+  "session_id": "20260315-run-05",
+  "agent": "gpt-5.3-codex-high",
+  "checklist_version": "analysis/MPC2500_OS_RE_CHECKLIST.md",
+  "gates": [
+    {
+      "step_id": "6.1",
+      "name": "Matrix execution quality",
+      "status": "PASS",
+      "evidence": [
+        "analysis/output/t0004_t0007_matrix_manifest.json",
+        "T0004/T0005/T0006/T0007 each have unique spec + manifest + hardware trial result JSON.",
+        "Specs: analysis/patch_specs/t0004_mpc2500_late_os_update.json, analysis/patch_specs/t0005_mpc2500_startup_banner_matrix.json, analysis/patch_specs/t0006_mpc2500_neutral_byte_matrix.json, analysis/patch_specs/t0007_mpc2500_control_original.json"
+      ],
+      "notes": "Matrix artifact discipline is complete; hardware outcomes are complete for T0004 and pending for T0005-T0007."
+    },
+    {
+      "step_id": "6.2",
+      "name": "Decision output",
+      "status": "FAIL",
+      "evidence": [
+        "Only T0004 has accepted hardware outcome evidence.",
+        "T0005/T0006/T0007 currently have result=unknown pending hardware execution.",
+        "No evidence-backed basis yet to conclude global rejection, region-dependent behavior, or broad acceptance."
+      ],
+      "notes": "Integrity behavior conclusion remains underdetermined with partial matrix outcomes."
+    },
+    {
+      "step_id": "7.1",
+      "name": "Error string branch mapping",
+      "status": "SKIP",
+      "evidence": [
+        "Skipped due Gate 6.2 failure."
+      ],
+      "notes": ""
+    },
+    {
+      "step_id": "7.2",
+      "name": "Flash routine proof",
+      "status": "SKIP",
+      "evidence": [
+        "Skipped due Gate 6.2 failure."
+      ],
+      "notes": ""
+    },
+    {
+      "step_id": "8.1",
+      "name": "Readiness decision",
+      "status": "SKIP",
+      "evidence": [
+        "Skipped due Gate 6.2 failure."
+      ],
+      "notes": ""
+    },
+    {
+      "step_id": "8.2",
+      "name": "First logic patch protocol",
+      "status": "SKIP",
+      "evidence": [
+        "Skipped due Gate 6.2 failure."
+      ],
+      "notes": ""
+    }
+  ],
+  "summary": {
+    "pass_count": 1,
+    "fail_count": 1,
+    "skip_count": 4,
+    "hard_blocker": "6.2 Decision output failed due partial matrix outcomes (3/4 unknown).",
+    "next_priority_gate": "6.2"
+  }
+}
