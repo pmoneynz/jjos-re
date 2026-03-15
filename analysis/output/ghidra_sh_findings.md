@@ -101,3 +101,14 @@ Still unresolved:
 - `Wrong file` branch/function proof. Current static artifacts still show no direct xref for `0x7df5`, and no direct literal-load proof for the late duplicate string.
 
 Detailed evidence notes: `analysis/output/error_branch_mapping_run08.md`.
+
+## Error-string branch mapping status (run-09 update)
+
+`Wrong file` is now branch-mapped for `analysis/mpc2500.bin`:
+
+- status code from `FUN_00008db4` is dispatched at `0x1062..0x1082`
+- non-10/non-20 codes route to `FUN_000016fc` with `r6 = status_code`
+- `FUN_000016fc` indexes fixed-width table at `0x7d81` using `29 * index`
+- index `4` resolves to `0x7df5` (`Wrong file !!`)
+
+Detailed proof: `analysis/output/error_branch_mapping_run09.md`.

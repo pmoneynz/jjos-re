@@ -141,6 +141,7 @@
 - Refs: `-`
 
 > Run-08 note: direct branch/function mapping for `wrong_file` remains unresolved in current static extraction. See `analysis/output/error_branch_mapping_run08.md`.
+> Run-09 update: branch mapping completed via status-code table dispatch (`0x1062..0x1082` -> `FUN_000016fc` index mapping). See `analysis/output/error_branch_mapping_run09.md`.
 
 ### `boot_file_write_error`
 
