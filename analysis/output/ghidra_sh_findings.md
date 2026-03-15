@@ -88,3 +88,16 @@ Current confidence:
   - `Flash ROM Writing %`
 - The exact function that sends AMD flash command sequences to the `AM29LV641`
 - The exact checksum / OS-data validation routine
+
+## Error-string branch mapping status (run-08)
+
+For target firmware `analysis/mpc2500.bin`, Capstone SH4 disassembly now proves:
+
+- `File data error` (`0x7c50`) branch leg at `0x00000cf4`, reached when the pre-check return at `0x00000c90` is non-zero (`tst r6,r6` + `bf/s 0x00000cf4`).
+- `OS data error` (`0x7c80`) branch leg at `0x00000dd4`, reached via mismatch branches to `0x00000dd0` from checks at `0x00000d42`, `0x00000d76`, and `0x00000d84`.
+
+Still unresolved:
+
+- `Wrong file` branch/function proof. Current static artifacts still show no direct xref for `0x7df5`, and no direct literal-load proof for the late duplicate string.
+
+Detailed evidence notes: `analysis/output/error_branch_mapping_run08.md`.

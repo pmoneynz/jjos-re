@@ -1,0 +1,53 @@
+{
+  "session_id": "20260315-run-08",
+  "agent": "gpt-5.3-codex-high",
+  "checklist_version": "analysis/MPC2500_OS_RE_CHECKLIST.md",
+  "gates": [
+    {
+      "step_id": "7.1",
+      "name": "Error string branch mapping",
+      "status": "FAIL",
+      "evidence": [
+        "analysis/output/error_branch_mapping_run08.md",
+        "Proven: `File data error` branch at 0x00000cf4 (triggered by non-zero pre-check return from 0x00000c90 path).",
+        "Proven: `OS data error` branch at 0x00000dd4 (reached via mismatch branches at 0x00000d42 / 0x00000d76 / 0x00000d84).",
+        "Unproven: `Wrong file` branch/function mapping remains unresolved (no direct xref/literal-load proof in current static extraction)."
+      ],
+      "notes": "Gate requires branch/function proof for all three strings; 2/3 proven is insufficient."
+    },
+    {
+      "step_id": "7.2",
+      "name": "Flash routine proof",
+      "status": "SKIP",
+      "evidence": [
+        "Skipped due Gate 7.1 failure."
+      ],
+      "notes": ""
+    },
+    {
+      "step_id": "8.1",
+      "name": "Readiness decision",
+      "status": "SKIP",
+      "evidence": [
+        "Skipped due Gate 7.1 failure."
+      ],
+      "notes": ""
+    },
+    {
+      "step_id": "8.2",
+      "name": "First logic patch protocol",
+      "status": "SKIP",
+      "evidence": [
+        "Skipped due Gate 7.1 failure."
+      ],
+      "notes": ""
+    }
+  ],
+  "summary": {
+    "pass_count": 0,
+    "fail_count": 1,
+    "skip_count": 3,
+    "hard_blocker": "7.1 incomplete: `Wrong file` branch condition/function still unproven.",
+    "next_priority_gate": "7.1"
+  }
+}

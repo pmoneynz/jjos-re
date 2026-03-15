@@ -140,6 +140,8 @@
 - Address: `0x7df5`
 - Refs: `-`
 
+> Run-08 note: direct branch/function mapping for `wrong_file` remains unresolved in current static extraction. See `analysis/output/error_branch_mapping_run08.md`.
+
 ### `boot_file_write_error`
 
 - Address: `0x7fa8`
