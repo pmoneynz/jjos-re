@@ -13,15 +13,15 @@
   "candidate_path": "hardware_candidates/mpc2500_t0006_neutral_byte_matrix.bin",
   "manifest_path": "analysis/output/t0006_mpc2500_neutral_byte_manifest.json",
   "expected_behavior": "If global integrity is strict, device should reject despite non-UI single-byte neutral-region change.",
-  "observed_behavior": "No hardware execution recorded yet for this matrix candidate.",
-  "result": "unknown",
+  "observed_behavior": "Operator reported T0006 succeeds on MPC2500 hardware.",
+  "result": "accepted",
   "error_text_observed": "",
-  "flash_commit_reached": false,
-  "flash_commit_executed": false,
+  "flash_commit_reached": true,
+  "flash_commit_executed": true,
   "evidence": {
     "photos": [],
     "videos": [],
-    "notes": "Matrix C candidate prepared; hardware run pending."
+    "notes": "Outcome from operator report in chat: T0006 succeeds. No screenshot/video reference provided in this update."
   },
-  "next_action": "Execute MPC2500 dry-run load attempt and capture acceptance/rejection evidence."
+  "next_action": "Add photo/video capture reference for T0006 run to raise evidence strength."
 }

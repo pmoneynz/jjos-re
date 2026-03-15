@@ -150,7 +150,8 @@
 ### Current status
 
 - Candidate generated and manifested.
-- Hardware outcome pending (`analysis/output/t0006_hardware_trial_result.json`).
+- Operator-reported hardware outcome: T0006 succeeds on MPC2500.
+- Evidence currently note-only (no screenshot/video yet recorded) in `analysis/output/t0006_hardware_trial_result.json`.
 
 ## Trial 0007 - Matrix Control / Original
 
@@ -175,5 +176,6 @@
 ### Current status
 
 - Control candidate generated and manifested.
-- Hardware outcome pending (`analysis/output/t0007_hardware_trial_result.json`).
+- Hardware screenshot shows update dialog loading T0007 candidate; operator reports success.
+- Trial recorded as accepted in `analysis/output/t0007_hardware_trial_result.json`.
 

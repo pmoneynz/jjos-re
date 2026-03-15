@@ -27,7 +27,7 @@
       "spec_path": "analysis/patch_specs/t0006_mpc2500_neutral_byte_matrix.json",
       "manifest_path": "analysis/output/t0006_mpc2500_neutral_byte_manifest.json",
       "hardware_result_path": "analysis/output/t0006_hardware_trial_result.json",
-      "result": "unknown"
+      "result": "accepted"
     },
     {
       "trial_id": "T0007",
@@ -35,8 +35,8 @@
       "spec_path": "analysis/patch_specs/t0007_mpc2500_control_original.json",
       "manifest_path": "analysis/output/t0007_mpc2500_control_manifest.json",
       "hardware_result_path": "analysis/output/t0007_hardware_trial_result.json",
-      "result": "unknown"
+      "result": "accepted"
     }
   ],
-  "status": "matrix_artifacts_complete_hardware_partial_two_accepts"
+  "status": "matrix_hardware_complete_broad_acceptance_indicated"
 }
