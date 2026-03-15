@@ -125,3 +125,13 @@ Still pending for full gate closure:
 - unique command-sequence proof that `FUN_0000853e` is erase (vs setup/probe) rather than a generic pre-write stage.
 
 Detailed evidence notes: `analysis/output/flash_routine_characterization_run10.md`.
+
+## Flash routine proof status (run-11)
+
+Routine-role mapping is now formalized in `analysis/output/flash_routine_proof_run11.md`:
+
+- Erase-stage: `FUN_0000853e` (controller command+wait sequencing in update flow)
+- Program-stage: `FUN_00008db4` (bulk transfer loop through `FUN_000084f8`/`FUN_0000844a`)
+- Verify-stage: validation block `0x00000d3a..0x00000d96` (`OS data error` mismatch leg)
+
+Supporting dispatch table mapping for flash-specific error rows (29/30/31) is included in the same proof note.

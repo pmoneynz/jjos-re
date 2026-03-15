@@ -179,3 +179,28 @@
 - Hardware screenshot shows update dialog loading T0007 candidate; operator reports success.
 - Trial recorded as accepted in `analysis/output/t0007_hardware_trial_result.json`.
 
+## Trial 0008 - First Logic Patch (Error Dispatch Compare Shift)
+
+- Date (UTC): 2026-03-15
+- Goal: create first minimal reversible logic patch candidate for Gate 8.x readiness.
+- Risk classification: logic (moderate) — modifies one compare immediate in error-dispatch control flow.
+- Input firmware: `analysis/mpc2500.bin`
+- Input SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
+- Patch spec: `analysis/patch_specs/t0008_mpc2500_logic_error_dispatch_shift.json`
+- Candidate binary: `hardware_candidates/mpc2500_t0008_logic_error_dispatch_shift.bin`
+- Output SHA-256: `2e103331c2dc18a86b47982f8f7aecb4192cbb4dc7cb6b251109196b34d5316a`
+- Manifest: `analysis/output/t0008_mpc2500_logic_error_dispatch_shift_manifest.json`
+
+### Byte-level change
+
+- Offset: `0x1064`
+- Before: `0a88` (`cmp/eq #10,r0`)
+- After: `0b88` (`cmp/eq #11,r0`)
+- Length preserved: yes (`2` bytes)
+- Byte-level verification: exactly one byte changed (`0x1064`).
+
+### Current status
+
+- Candidate generated and manifested with deterministic single-byte control-flow change.
+- Hardware behavior evidence not yet captured (`analysis/output/t0008_hardware_trial_result.json` result is `unknown`).
+
