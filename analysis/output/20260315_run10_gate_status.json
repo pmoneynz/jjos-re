@@ -1,0 +1,44 @@
+{
+  "session_id": "20260315-run-10",
+  "agent": "gpt-5.3-codex-high",
+  "checklist_version": "analysis/MPC2500_OS_RE_CHECKLIST.md",
+  "gates": [
+    {
+      "step_id": "7.2",
+      "name": "Flash routine proof",
+      "status": "FAIL",
+      "evidence": [
+        "analysis/output/flash_routine_characterization_run10.md",
+        "Proven: `FUN_000087a6` failure is directly mapped to `Flash ROM write error` display path.",
+        "Proven: verify/integrity error path (`OS data error`) mapped with branch-condition proof.",
+        "Unproven: explicit erase-command signature for `FUN_0000853e` (currently strongest pre-write candidate only)."
+      ],
+      "notes": "Two of three roles are proven (program + verify). Erase remains unproven at command-sequence level."
+    },
+    {
+      "step_id": "8.1",
+      "name": "Readiness decision",
+      "status": "SKIP",
+      "evidence": [
+        "Skipped due Gate 7.2 failure."
+      ],
+      "notes": ""
+    },
+    {
+      "step_id": "8.2",
+      "name": "First logic patch protocol",
+      "status": "SKIP",
+      "evidence": [
+        "Skipped due Gate 7.2 failure."
+      ],
+      "notes": ""
+    }
+  ],
+  "summary": {
+    "pass_count": 0,
+    "fail_count": 1,
+    "skip_count": 2,
+    "hard_blocker": "7.2 requires explicit erase command-level proof; currently unresolved.",
+    "next_priority_gate": "7.2"
+  }
+}

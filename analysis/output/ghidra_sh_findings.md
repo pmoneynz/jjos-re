@@ -112,3 +112,16 @@ Detailed evidence notes: `analysis/output/error_branch_mapping_run08.md`.
 - index `4` resolves to `0x7df5` (`Wrong file !!`)
 
 Detailed proof: `analysis/output/error_branch_mapping_run09.md`.
+
+## Flash routine characterization status (run-10 update)
+
+Strengthened evidence now proves:
+
+- `FUN_000087a6` failure maps directly to message index `30` -> `Flash ROM write error` (`0x80e7`) via `0x1034 -> 0x16fc`.
+- OS verify/integrity checks are proven in `0x00000d3a..0x00000dd8` (mismatch branches to `OS data error`).
+
+Still pending for full gate closure:
+
+- unique command-sequence proof that `FUN_0000853e` is erase (vs setup/probe) rather than a generic pre-write stage.
+
+Detailed evidence notes: `analysis/output/flash_routine_characterization_run10.md`.
