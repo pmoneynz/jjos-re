@@ -24,6 +24,10 @@ Primary evidence lives in:
   - versioned JSON patch specs for reproducible experiments
 - `PRACTICAL_PATCH_PATH.md`
   - stage-gated path from patch generation to controlled hardware trials
+- `MPC2500_OS_RE_CHECKLIST.md`
+  - pass/fail-gated execution checklist for autonomous RE agents
+- `templates/`
+  - structured JSON templates for gate status and hardware trial outcomes
 - `output/`
   - generated reports, manifests, and scan artifacts
 
@@ -37,9 +41,9 @@ Primary evidence lives in:
 3. Inspect patch-safe targets:
    - `python3 analysis/firmware_patch_tool.py inspect --firmware mpc2500_jv313.bin`
 4. Build a deterministic same-length patch candidate:
-   - `python3 analysis/firmware_patch_tool.py apply --firmware mpc2500_jv313.bin --spec analysis/patch_specs/poc_late_os_update.json --output analysis/output/poc_late_os_update.bin --manifest analysis/output/poc_late_os_update_manifest.json`
+   - `python3 analysis/firmware_patch_tool.py apply --firmware mpc2500_jv313.bin --spec analysis/patch_specs/poc_late_os_update.json --output hardware_candidates/poc_late_os_update.bin --manifest analysis/output/poc_late_os_update_manifest.json`
 5. Execute hardware tests using the stage gates in:
-   - `analysis/PRACTICAL_PATCH_PATH.md`
+   - `analysis/MPC2500_OS_RE_CHECKLIST.md`
 
 ## Discipline
 

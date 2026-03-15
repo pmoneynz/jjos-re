@@ -1,0 +1,24 @@
+{
+  "session_id": "YYYYMMDD-run-01",
+  "agent": "name_or_id",
+  "checklist_version": "analysis/MPC2500_OS_RE_CHECKLIST.md",
+  "gates": [
+    {
+      "step_id": "0.1",
+      "name": "Repository and branch sanity",
+      "status": "PASS|FAIL|SKIP",
+      "evidence": [
+        "artifact or command output reference"
+      ],
+      "notes": ""
+    }
+  ],
+  "summary": {
+    "pass_count": 0,
+    "fail_count": 0,
+    "skip_count": 0,
+    "hard_blocker": "",
+    "next_priority_gate": ""
+  }
+}
+
