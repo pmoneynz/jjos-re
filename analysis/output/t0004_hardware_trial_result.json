@@ -13,7 +13,7 @@
   "candidate_path": "hardware_candidates/mpc2500_t0004_late_os_update.bin",
   "manifest_path": "analysis/output/t0004_mpc2500_late_os_update_manifest.json",
   "expected_behavior": "During update dry-run load path, candidate-specific UI text should indicate patched label if image is accepted.",
-  "observed_behavior": "User-provided screenshots show MPC2500 load browser selecting 'mpc2500.update' and reaching OS update confirmation dialog with CANCEL/DO IT; operator reports candidate loads and runs successfully on hardware.",
+  "observed_behavior": "User-provided screenshots show MPC2500 load browser selecting 'mpc2500.update', OS update confirmation, and active write phase with patched title 'OS MOD V3' and progress text 'Flash ROM Writing 11%'; operator reports candidate loads and runs successfully on hardware.",
   "result": "accepted",
   "error_text_observed": "",
   "flash_commit_reached": true,
@@ -21,7 +21,8 @@
   "evidence": {
     "photos": [
       "chat_attachment:t0004_screen_01_load_browser",
-      "chat_attachment:t0004_screen_02_update_confirm"
+      "chat_attachment:t0004_screen_02_update_confirm",
+      "chat_attachment:t0004_screen_03_os_mod_v3_flash_write_11pct"
     ],
     "videos": [],
     "notes": "Detailed screenshot interpretation is documented in analysis/output/t0004_hardware_capture_notes.md."

@@ -19,7 +19,7 @@
       "spec_path": "analysis/patch_specs/t0005_mpc2500_startup_banner_matrix.json",
       "manifest_path": "analysis/output/t0005_mpc2500_startup_banner_manifest.json",
       "hardware_result_path": "analysis/output/t0005_hardware_trial_result.json",
-      "result": "unknown"
+      "result": "accepted"
     },
     {
       "trial_id": "T0006",
@@ -38,5 +38,5 @@
       "result": "unknown"
     }
   ],
-  "status": "matrix_artifacts_complete_hardware_partial"
+  "status": "matrix_artifacts_complete_hardware_partial_two_accepts"
 }

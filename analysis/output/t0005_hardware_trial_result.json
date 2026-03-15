@@ -13,15 +13,17 @@
   "candidate_path": "hardware_candidates/mpc2500_t0005_startup_banner_matrix.bin",
   "manifest_path": "analysis/output/t0005_mpc2500_startup_banner_manifest.json",
   "expected_behavior": "If accepted and rendered, startup banner text should reflect MATRIX-B-05 variant.",
-  "observed_behavior": "No hardware execution recorded yet for this matrix candidate.",
-  "result": "unknown",
+  "observed_behavior": "User-provided hardware screenshot shows runtime UI text 'Version=1.24   MATRIX-B-05', matching the patched startup banner token for this candidate.",
+  "result": "accepted",
   "error_text_observed": "",
-  "flash_commit_reached": false,
-  "flash_commit_executed": false,
+  "flash_commit_reached": true,
+  "flash_commit_executed": true,
   "evidence": {
-    "photos": [],
+    "photos": [
+      "chat_attachment:t0005_screen_01_version_matrix_b05"
+    ],
     "videos": [],
-    "notes": "Matrix B candidate prepared; hardware run pending."
+    "notes": "Detailed screenshot interpretation is documented in analysis/output/t0005_hardware_capture_notes.md."
   },
-  "next_action": "Execute MPC2500 dry-run load attempt and capture acceptance/rejection evidence."
+  "next_action": "Execute matrix candidates T0006 and T0007 on hardware to close Gate 6.2 decision output."
 }

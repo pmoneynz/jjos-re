@@ -2,7 +2,7 @@
 
 ## Evidence source
 
-Two screenshots were provided directly in the chat for Trial T0004.
+Three screenshots were provided directly in the chat for Trial T0004 evidence chain.
 
 ## Screenshot references
 
@@ -16,6 +16,11 @@ Two screenshots were provided directly in the chat for Trial T0004.
    - Visible text includes `Loading: mpc2500.update`.
    - Confirmation options visible: `CANCEL` and `DO IT`.
 
+3. `chat_attachment:t0004_screen_03_os_mod_v3_flash_write_11pct`
+   - Shows patched label `OS MOD V3` in update dialog title.
+   - Shows active write progress text: `Flash ROM Writing 11%`.
+   - Confirms candidate-specific text patch is active during flash-write phase.
+
 ## Operator-reported outcome
 
 - Operator statement: `mpc2500_t0004_late_os_update.bin load and runs successfully on MPC2500 hardware`.
@@ -23,6 +28,7 @@ Two screenshots were provided directly in the chat for Trial T0004.
 ## Direct observations from screenshots
 
 - Load attempt evidence: present.
-- Acceptance path evidence: present to pre-commit confirmation stage (`OS update` dialog).
-- Candidate-specific visual marker expectation (`OS MOD V3`) is **not visible** in the provided screens; label remains `OS update`.
+- Acceptance path evidence: present.
+- Candidate-specific visual marker (`OS MOD V3`) is visible.
+- Flash write phase evidence is visible (`Flash ROM Writing 11%`).
 - No explicit error text observed in provided screens.

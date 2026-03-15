@@ -98,7 +98,8 @@
 - Gate 5.1 evidence completed via host-side FAT16 media preparation and filename verification.
 - Operator-reported hardware outcome: `mpc2500_t0004_late_os_update.bin` loads and runs successfully on MPC2500.
 - User-provided screenshot evidence references are now documented in `analysis/output/t0004_hardware_capture_notes.md`.
-- Hardware screenshots show file selection/confirmation path using `mpc2500.update`; candidate-specific visual marker (`OS MOD V3`) is not shown in those captures.
+- Hardware screenshots show file selection/confirmation path using `mpc2500.update`.
+- Additional proof screenshot now shows patched label `OS MOD V3` with `Flash ROM Writing 11%`.
 
 ## Trial 0005 - Matrix B Startup Banner Patch
 
@@ -123,7 +124,8 @@
 ### Current status
 
 - Candidate generated and manifested.
-- Hardware outcome pending (`analysis/output/t0005_hardware_trial_result.json`).
+- Hardware proof captured: runtime UI shows `Version=1.24   MATRIX-B-05` on MPC2500.
+- Trial result recorded as accepted in `analysis/output/t0005_hardware_trial_result.json`.
 
 ## Trial 0006 - Matrix C Neutral-Region Single-Byte Patch
 
