@@ -71,3 +71,30 @@
 - Candidate generated and manifested in this workspace.
 - No hardware media preparation or on-device dry-run evidence captured yet.
 
+## Trial 0004 - Hardware Dry-Run Media Preparation (T0004)
+
+- Date (UTC): 2026-03-15
+- Goal: execute Gate 5.1 with reproducible media/filename discipline for dry-run update loading.
+- Risk classification: cosmetic (safe) candidate; no additional firmware logic/code edits beyond Trial 0003 patch semantics.
+- Input firmware: `analysis/mpc2500.bin`
+- Input SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
+- Patch spec: `analysis/patch_specs/t0004_mpc2500_late_os_update.json`
+- Candidate binary: `hardware_candidates/mpc2500_t0004_late_os_update.bin`
+- Output SHA-256: `e54040ef75cb5da75a0d4a7be2bcac96d6e163804b21b7d10865b70285d20099`
+- Manifest: `analysis/output/t0004_mpc2500_late_os_update_manifest.json`
+- Media image: `hardware_candidates/t0004_cf_fat16.img` (FAT16, volume label `MPCCF004`)
+- Controlled updater filename on media root: `MPC2500.SOS`
+- Media image SHA-256: `5be262f219261cc4c7211aee0ff413d31d4d1022452b713a057cb18199fb473f`
+
+### Byte-level change
+
+- Offset: `0xB1B28`
+- Before: `OS update` (`4f5320757064617465`)
+- After: `OS MOD V3` (`4f53204d4f44205633`)
+- Length preserved: yes (`9` bytes)
+
+### Current status
+
+- Gate 5.1 evidence completed via host-side FAT16 media preparation and filename verification.
+- Gate 5.2 remains pending/failed in this environment due missing physical device photo/video capture.
+

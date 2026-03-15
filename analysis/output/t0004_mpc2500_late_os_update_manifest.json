@@ -1,0 +1,22 @@
+{
+  "timestamp_utc": "2026-03-15T21:46:12.264373+00:00",
+  "firmware": "mpc2500.bin",
+  "spec": "analysis/patch_specs/t0004_mpc2500_late_os_update.json",
+  "spec_name": "t0004_mpc2500_late_os_update_label",
+  "spec_notes": "Hardware dry-run trial candidate. Same single-variable cosmetic replacement for controlled Gate 5 execution.",
+  "input_size": 784916,
+  "output_size": 784916,
+  "input_sha256": "6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5",
+  "output_sha256": "e54040ef75cb5da75a0d4a7be2bcac96d6e163804b21b7d10865b70285d20099",
+  "patches": [
+    {
+      "name": "late_os_update_label",
+      "offset_hex": "0xb1b28",
+      "length": 9,
+      "before_hex": "4f5320757064617465",
+      "after_hex": "4f53204d4f44205633",
+      "before_ascii": "OS update",
+      "after_ascii": "OS MOD V3"
+    }
+  ]
+}
