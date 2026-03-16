@@ -1,0 +1,12 @@
+{
+  "name": "t0009_diag_control_force_status10",
+  "notes": "Diagnostic control build: force r0=10 at dispatch point (0x1062) to deterministically trigger cmp/eq #10 path on control firmware.",
+  "patches": [
+    {
+      "name": "force_status_code_10",
+      "offset": "0x1062",
+      "expected_hex": "fd00",
+      "replacement_hex": "0ae0"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "t0010_diag_t0008_force_status10",
+  "notes": "Diagnostic T0008 build: force r0=10 at dispatch point and keep T0008 cmp immediate shift (#10->#11) to force A/B divergence.",
+  "patches": [
+    {
+      "name": "force_status_code_10",
+      "offset": "0x1062",
+      "expected_hex": "fd00",
+      "replacement_hex": "0ae0"
+    },
+    {
+      "name": "t0008_cmp_shift_10_to_11",
+      "offset": "0x1064",
+      "expected_hex": "0a88",
+      "replacement_hex": "0b88"
+    }
+  ]
+}

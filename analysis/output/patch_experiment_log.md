@@ -205,3 +205,47 @@
 - Hardware acceptance is proven (load + completed flash write).
 - No-media validation case showed same message as control (`Insert Memory Card !!`), so behavior-change effect is not yet demonstrated for this patch.
 
+## Trial 0009 - Diagnostic Control (Forced Status=10)
+
+- Date (UTC): 2026-03-15
+- Goal: force error-dispatch input to status 10 on control baseline for deterministic A/B with T0010.
+- Risk classification: diagnostic logic (temporary).
+- Input firmware: `analysis/mpc2500.bin`
+- Input SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
+- Patch spec: `analysis/patch_specs/t0009_diag_control_force_status10.json`
+- Candidate binary: `hardware_candidates/mpc2500_t0009_diag_control_force_status10.bin`
+- Output SHA-256: `4b08e3c19040af8c356c844dd924ddcfd14d1aa0796601f02d4acb679f28cdab`
+- Manifest: `analysis/output/t0009_diag_control_force_status10_manifest.json`
+
+### Byte-level change
+
+- Offset: `0x1062`
+- Before: `fd00` (`mov.w @(r0,r15),r0`)
+- After: `0ae0` (`mov #10,r0`)
+- Length preserved: yes (`2` bytes)
+
+### Current status
+
+- Diagnostic build generated; awaiting hardware A/B capture.
+
+## Trial 0010 - Diagnostic T0008 (Forced Status=10 + cmp#11)
+
+- Date (UTC): 2026-03-15
+- Goal: force same dispatch input as T0009 while retaining T0008 compare shift to expose deterministic branch divergence.
+- Risk classification: diagnostic logic (temporary).
+- Input firmware: `analysis/mpc2500.bin`
+- Input SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
+- Patch spec: `analysis/patch_specs/t0010_diag_t0008_force_status10.json`
+- Candidate binary: `hardware_candidates/mpc2500_t0010_diag_t0008_force_status10.bin`
+- Output SHA-256: `ffe648dd2528a3facf1404098c22f5b27a8af4557ddaa0bd4dc7ee3a7a6508c1`
+- Manifest: `analysis/output/t0010_diag_t0008_force_status10_manifest.json`
+
+### Byte-level change
+
+- Offset `0x1062`: `fd00` -> `0ae0` (force status 10)
+- Offset `0x1064`: `0a88` -> `0b88` (T0008 compare shift 10->11)
+
+### Current status
+
+- Diagnostic build generated; awaiting hardware A/B capture.
+

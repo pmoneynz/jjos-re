@@ -1,0 +1,22 @@
+{
+  "timestamp_utc": "2026-03-16T01:04:07.584679+00:00",
+  "firmware": "mpc2500.bin",
+  "spec": "analysis/patch_specs/t0009_diag_control_force_status10.json",
+  "spec_name": "t0009_diag_control_force_status10",
+  "spec_notes": "Diagnostic control build: force r0=10 at dispatch point (0x1062) to deterministically trigger cmp/eq #10 path on control firmware.",
+  "input_size": 784916,
+  "output_size": 784916,
+  "input_sha256": "6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5",
+  "output_sha256": "4b08e3c19040af8c356c844dd924ddcfd14d1aa0796601f02d4acb679f28cdab",
+  "patches": [
+    {
+      "name": "force_status_code_10",
+      "offset_hex": "0x1062",
+      "length": 2,
+      "before_hex": "fd00",
+      "after_hex": "0ae0",
+      "before_ascii": "\ufffd\u0000",
+      "after_ascii": "\n\ufffd"
+    }
+  ]
+}
