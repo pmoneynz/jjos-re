@@ -5,19 +5,20 @@
 - SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
 - Entropy: `6.8587` bits/byte
 
-## Likely Architecture / Mapping
+## Mapping Heuristics and Current Architecture Baseline
 
 - Authoritative working RE path is currently SuperH (`SuperH4:LE:32:default`, base `0x00000000`) from the Ghidra artifacts.
 - This script's pointer-density/base heuristics are coarse and should be treated as supporting context only, not architecture proof.
 - Top legacy big-endian base candidate in this static scan: `0x9000000` with `5485` mapped words.
 - Practical rule: rely on `analysis/output/ghidra_sh_findings.md` for architecture and control-flow claims.
+- `0x08xxxxxx` / `0x09xxxxxx` / `0x0Axxxxxx` pointer-like prefixes still suggest multiple mapped regions or table domains worth tracking.
 
 ## Candidate Validation / Checksum Areas
 
 - Boot/update string block at `0x7BE0-0x8130`: dense cluster of status and error strings tied to loading and writing the OS image.
 - Direct/immediate references into that boot/update block under base `0x09000000`: `216` hits.
 - Flash progress strings at `0x94A0` and `0x94B8` are directly referenced from file offsets `0x4F61C` and `0x89290`.
-- Later JJOS/OS-XL UI blocks around `0xC7D40-0xD3230` do not expose clean `0x09000000 + offset` references, which suggests a different addressing scheme or table-driven lookup.
+- Later JJOS/OS-XL UI blocks around `0xC7D40-0xD3230` do not expose clean direct references under that same arithmetic model, suggesting table-driven/indirect lookup.
 - No standard table-driven `CRC32` or `CRC16-CCITT` lookup tables were found in the image.
 - Practical implication: update validation is likely custom, bitwise, additive, or embedded inside hand-written routines rather than a stock table-based CRC implementation.
 

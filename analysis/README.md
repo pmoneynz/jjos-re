@@ -43,12 +43,21 @@ Primary evidence lives in:
 3. Load manual-backed constraints and hardware facts:
    - `analysis/knowledge_base/MANUAL_KNOWLEDGE_SUMMARY.md`
    - `analysis/knowledge_base/manual_facts.json`
-4. Inspect patch-safe targets:
+4. Review generated static scan outputs:
+   - `analysis/output/report.md`
+   - `analysis/output/interesting_strings.tsv`
+   - `analysis/output/strings.tsv`
+5. Inspect patch-safe targets:
    - `python3 analysis/firmware_patch_tool.py inspect --firmware mpc2500_jv313.bin`
-5. Build a deterministic same-length patch candidate:
+6. Build a deterministic same-length patch candidate:
    - `python3 analysis/firmware_patch_tool.py apply --firmware mpc2500_jv313.bin --spec analysis/patch_specs/poc_late_os_update.json --output hardware_candidates/poc_late_os_update.bin --manifest analysis/output/poc_late_os_update_manifest.json`
-6. Execute hardware tests using the stage gates in:
+7. Execute hardware tests using the stage gates in:
    - `analysis/MPC2500_OS_RE_CHECKLIST.md`
+
+## Notes on superseded assumptions
+
+- Legacy ColdFire/`0x09000000` heuristics are historical context only.
+- Active architecture baseline remains SuperH (`SuperH4:LE:32:default`) with base `0x00000000`.
 
 ## Discipline
 

@@ -309,19 +309,20 @@ def write_report(path: Path, summary: dict[str, object]) -> None:
         f"- SHA-256: `{summary['sha256']}`",
         f"- Entropy: `{summary['entropy_bits_per_byte']}` bits/byte",
         "",
-        "## Likely Architecture / Mapping",
+        "## Mapping Heuristics and Current Architecture Baseline",
         "",
         "- Authoritative working RE path is currently SuperH (`SuperH4:LE:32:default`, base `0x00000000`) from the Ghidra artifacts.",
         "- This script's pointer-density/base heuristics are coarse and should be treated as supporting context only, not architecture proof.",
         f"- Top legacy big-endian base candidate in this static scan: `{hex(best_base['base'])}` with `{best_base['mapped_word_count']}` mapped words.",
         "- Practical rule: rely on `analysis/output/ghidra_sh_findings.md` for architecture and control-flow claims.",
+        "- `0x08xxxxxx` / `0x09xxxxxx` / `0x0Axxxxxx` pointer-like prefixes still suggest multiple mapped regions or table domains worth tracking.",
         "",
         "## Candidate Validation / Checksum Areas",
         "",
         "- Boot/update string block at `0x7BE0-0x8130`: dense cluster of status and error strings tied to loading and writing the OS image.",
-        f"- Direct/immediate references into that boot/update block under base `0x09000000`: `{summary['update_range_refs']['boot_update_block_count']}` hits.",
+        f"- Direct/immediate references into that boot/update block under the legacy `0x09000000` arithmetic scan: `{summary['update_range_refs']['boot_update_block_count']}` hits.",
         "- Flash progress strings at `0x94A0` and `0x94B8` are directly referenced from file offsets `0x4F61C` and `0x89290`.",
-        "- Later JJOS/OS-XL UI blocks around `0xC7D40-0xD3230` do not expose clean `0x09000000 + offset` references, which suggests a different addressing scheme or table-driven lookup.",
+        "- Later JJOS/OS-XL UI blocks around `0xC7D40-0xD3230` do not expose clean direct references under that same arithmetic model, suggesting table-driven/indirect lookup.",
         "- No standard table-driven `CRC32` or `CRC16-CCITT` lookup tables were found in the image.",
         "- Practical implication: update validation is likely custom, bitwise, additive, or embedded inside hand-written routines rather than a stock table-based CRC implementation.",
         "",
@@ -350,9 +351,10 @@ def write_report(path: Path, summary: dict[str, object]) -> None:
         lines.extend(
             [
                 "",
-                "## Optional Legacy Probe",
+                "## Legacy M68k Probe (Historical Context Only)",
                 "",
-                "- Optional Capstone M68k probing is kept only as a legacy heuristic and is not architecture evidence.",
+                "- Optional Capstone M68k probing may produce valid decodes in early regions.",
+                "- Treat this as historical context only; it is not architecture evidence for this repository.",
             ]
         )
 
