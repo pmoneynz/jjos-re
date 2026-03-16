@@ -277,3 +277,44 @@
 - Candidate generated and static byte verification completed.
 - Hardware runtime confirmation pending.
 
+## Trial 0012 - Second Diagnostic Control (Post-Card-Check Force Index 10)
+
+- Date (UTC): 2026-03-15
+- Goal: force a later dispatch point (post-card-check callsite at `0x1080`) to index 10 on control baseline.
+- Risk classification: diagnostic logic (temporary).
+- Input firmware: `analysis/mpc2500.bin`
+- Input SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
+- Patch spec: `analysis/patch_specs/t0012_diag_control_postcard_force_idx10.json`
+- Candidate binary: `hardware_candidates/mpc2500_t0012_diag_control_postcard_force_idx10.bin`
+- Output SHA-256: `ca4df47a7b7b1115c2ef26386cc74cede2f4b9b9be95519c323bdb1dda02dfa6`
+- Manifest: `analysis/output/t0012_diag_control_postcard_force_idx10_manifest.json`
+
+### Byte-level change
+
+- Offset `0x1080`: `0366` (`mov r0,r6`) -> `0ae6` (`mov #10,r6`)
+
+### Current status
+
+- Diagnostic build generated; awaiting hardware A/B capture.
+
+## Trial 0013 - Second Diagnostic T0008 (Post-Card-Check Force Index 11)
+
+- Date (UTC): 2026-03-15
+- Goal: force same later dispatch point to index 11 while retaining T0008 compare shift.
+- Risk classification: diagnostic logic (temporary).
+- Input firmware: `analysis/mpc2500.bin`
+- Input SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
+- Patch spec: `analysis/patch_specs/t0013_diag_t0008_postcard_force_idx11.json`
+- Candidate binary: `hardware_candidates/mpc2500_t0013_diag_t0008_postcard_force_idx11.bin`
+- Output SHA-256: `2aee73a30c792f125976da642307d5821d60c3cbeff8389b82e807c2cfe67a98`
+- Manifest: `analysis/output/t0013_diag_t0008_postcard_force_idx11_manifest.json`
+
+### Byte-level changes
+
+- Offset `0x1064`: `0a88` -> `0b88` (T0008 compare shift)
+- Offset `0x1080`: `0366` -> `0be6` (force index 11 at later dispatch)
+
+### Current status
+
+- Diagnostic build generated; awaiting hardware A/B capture.
+

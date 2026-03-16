@@ -1,0 +1,18 @@
+{
+  "name": "t0013_diag_t0008_postcard_force_idx11",
+  "notes": "Second diagnostic pair (later branch point): keep T0008 compare shift and force dispatch index 11 at post-card-check callsite for deterministic divergence check.",
+  "patches": [
+    {
+      "name": "t0008_cmp_shift_10_to_11",
+      "offset": "0x1064",
+      "expected_hex": "0a88",
+      "replacement_hex": "0b88"
+    },
+    {
+      "name": "force_dispatch_index_11_postcard",
+      "offset": "0x1080",
+      "expected_hex": "0366",
+      "replacement_hex": "0be6"
+    }
+  ]
+}
