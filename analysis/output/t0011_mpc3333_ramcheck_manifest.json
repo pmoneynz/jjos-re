@@ -1,0 +1,22 @@
+{
+  "timestamp_utc": "2026-03-16T02:03:19.857637+00:00",
+  "firmware": "mpc2500_t0007_control_original.bin",
+  "spec": "analysis/patch_specs/t0011_mpc3333_ramcheck_boot_label.json",
+  "spec_name": "t0011_mpc3333_ramcheck_boot_label",
+  "spec_notes": "Single-variable cosmetic patch from control image: change boot RAM-check device label MPC2500->MPC3333.",
+  "input_size": 784916,
+  "output_size": 784916,
+  "input_sha256": "6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5",
+  "output_sha256": "f16601d67361c8e961e98b3c23997722ad486913582335831b428997b55d1626",
+  "patches": [
+    {
+      "name": "boot_ramcheck_label",
+      "offset_hex": "0x7bc0",
+      "length": 27,
+      "before_hex": "204d50433235303020282020204d4220696e7374616c6c65642029",
+      "after_hex": "204d50433333333320282020204d4220696e7374616c6c65642029",
+      "before_ascii": " MPC2500 (   MB installed )",
+      "after_ascii": " MPC3333 (   MB installed )"
+    }
+  ]
+}

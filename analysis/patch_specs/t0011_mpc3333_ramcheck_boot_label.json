@@ -1,0 +1,12 @@
+{
+  "name": "t0011_mpc3333_ramcheck_boot_label",
+  "notes": "Single-variable cosmetic patch from control image: change boot RAM-check device label MPC2500->MPC3333.",
+  "patches": [
+    {
+      "name": "boot_ramcheck_label",
+      "offset": "0x7BC0",
+      "expected_ascii": " MPC2500 (   MB installed )",
+      "replacement_ascii": " MPC3333 (   MB installed )"
+    }
+  ]
+}

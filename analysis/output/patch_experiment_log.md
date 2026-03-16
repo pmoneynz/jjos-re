@@ -252,3 +252,28 @@
 - Hardware run outcome reported: `Wrong card !!` (same as T0009).
 - No differential behavior observed in this A/B run.
 
+## Trial 0011 - MPC3333 RAM-Check Label (Control-Derived Cosmetic)
+
+- Date (UTC): 2026-03-15
+- Goal: produce control-identical candidate with only boot RAM-check model label changed from `MPC2500` to `MPC3333`.
+- Risk classification: cosmetic (safe) — single UI text token replacement.
+- Input firmware: `hardware_candidates/mpc2500_t0007_control_original.bin`
+- Input SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
+- Patch spec: `analysis/patch_specs/t0011_mpc3333_ramcheck_boot_label.json`
+- Candidate binary: `hardware_candidates/mpc2500_t0011_mpc3333_ramcheck.bin`
+- Output SHA-256: `f16601d67361c8e961e98b3c23997722ad486913582335831b428997b55d1626`
+- Manifest: `analysis/output/t0011_mpc3333_ramcheck_manifest.json`
+
+### Byte-level change
+
+- Offset: `0x7BC0` template region (` MPC2500 (   MB installed )`)
+- Before token: `MPC2500`
+- After token: `MPC3333`
+- Length preserved: yes (`27`-byte field unchanged)
+- Byte-level verification: exactly 4 bytes changed (`0x7BC4..0x7BC7`).
+
+### Current status
+
+- Candidate generated and static byte verification completed.
+- Hardware runtime confirmation pending.
+
