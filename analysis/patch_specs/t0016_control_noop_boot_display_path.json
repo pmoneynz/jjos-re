@@ -1,0 +1,12 @@
+{
+  "name": "t0016_control_noop_boot_display_path",
+  "notes": "Control no-op candidate for normal-boot A/B logic validation.",
+  "patches": [
+    {
+      "name": "noop_boot_display_instruction",
+      "offset": "0xB50",
+      "expected_hex": "59d6",
+      "replacement_hex": "59d6"
+    }
+  ]
+}

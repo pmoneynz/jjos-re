@@ -366,3 +366,44 @@
 
 - Diagnostic build generated; awaiting hardware A/B capture.
 
+## Trial 0016 - Control No-Op (Normal-Boot Logic Pair)
+
+- Date (UTC): 2026-03-15
+- Goal: establish no-op control for runtime logic-pair testing outside updater rejection path.
+- Risk classification: control (safe).
+- Input firmware: `analysis/mpc2500.bin`
+- Input SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
+- Patch spec: `analysis/patch_specs/t0016_control_noop_boot_display_path.json`
+- Candidate binary: `hardware_candidates/mpc2500_t0016_control_noop_boot_display.bin`
+- Output SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
+- Manifest: `analysis/output/t0016_control_noop_boot_display_manifest.json`
+
+### Byte-level change
+
+- Offset `0xB50`: `59d6` -> `59d6` (no-op)
+
+### Current status
+
+- Control build generated; awaiting hardware capture.
+
+## Trial 0017 - Runtime Logic Test (Boot Display Pointer Shift)
+
+- Date (UTC): 2026-03-15
+- Goal: single reversible logic change in guaranteed startup UI path.
+- Risk classification: logic (moderate-low).
+- Input firmware: `analysis/mpc2500.bin`
+- Input SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
+- Patch spec: `analysis/patch_specs/t0017_logic_boot_display_ptr_shift.json`
+- Candidate binary: `hardware_candidates/mpc2500_t0017_logic_boot_display_ptr_shift.bin`
+- Output SHA-256: `5a6e05bc747099ccfe3f0980f4880b40eeda8f1997789976fb28125da50e487c`
+- Manifest: `analysis/output/t0017_logic_boot_display_ptr_shift_manifest.json`
+
+### Byte-level change
+
+- Offset `0xB50`: `59d6` -> `5bd6`
+- Byte-level verification: exactly one byte changed (`0xB50`).
+
+### Current status
+
+- Test build generated; awaiting hardware A/B capture.
+
