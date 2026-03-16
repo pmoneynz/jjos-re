@@ -1,0 +1,24 @@
+{
+  "name": "t0014_diag_control_all_dispatch_force_idx10",
+  "notes": "Robust diagnostic control: force message index 10 at all three 0x16fc callsites to avoid path-ambiguity in hardware runs.",
+  "patches": [
+    {
+      "name": "force_idx10_callsite_100a",
+      "offset": "0x100A",
+      "expected_hex": "1ee5",
+      "replacement_hex": "0ae6"
+    },
+    {
+      "name": "force_idx10_callsite_1034",
+      "offset": "0x1034",
+      "expected_hex": "2de4",
+      "replacement_hex": "0ae6"
+    },
+    {
+      "name": "force_idx10_callsite_1080",
+      "offset": "0x1080",
+      "expected_hex": "0366",
+      "replacement_hex": "0ae6"
+    }
+  ]
+}

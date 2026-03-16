@@ -318,3 +318,48 @@
 
 - Diagnostic build generated; awaiting hardware A/B capture.
 
+## Trial 0014 - Third Diagnostic Control (All Dispatch Callsites Force Index 10)
+
+- Date (UTC): 2026-03-15
+- Goal: eliminate path ambiguity by forcing message index 10 at all three `FUN_000016fc` callsites on control baseline.
+- Risk classification: diagnostic logic (temporary).
+- Input firmware: `analysis/mpc2500.bin`
+- Input SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
+- Patch spec: `analysis/patch_specs/t0014_diag_control_all_dispatch_force_idx10.json`
+- Candidate binary: `hardware_candidates/mpc2500_t0014_diag_control_all_dispatch_force_idx10.bin`
+- Output SHA-256: `b09b914d49966bafcc6f1502041e225fb6641b5a0aecaba678acb29d74fabf81`
+- Manifest: `analysis/output/t0014_diag_control_all_dispatch_force_idx10_manifest.json`
+
+### Byte-level changes
+
+- `0x100A`: `1ee5` -> `0ae6`
+- `0x1034`: `2de4` -> `0ae6`
+- `0x1080`: `0366` -> `0ae6`
+
+### Current status
+
+- Diagnostic build generated; awaiting hardware A/B capture.
+
+## Trial 0015 - Third Diagnostic T0008 (All Dispatch Callsites Force Index 11)
+
+- Date (UTC): 2026-03-15
+- Goal: force index 11 at all three dispatch callsites while retaining T0008 compare shift.
+- Risk classification: diagnostic logic (temporary).
+- Input firmware: `analysis/mpc2500.bin`
+- Input SHA-256: `6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5`
+- Patch spec: `analysis/patch_specs/t0015_diag_t0008_all_dispatch_force_idx11.json`
+- Candidate binary: `hardware_candidates/mpc2500_t0015_diag_t0008_all_dispatch_force_idx11.bin`
+- Output SHA-256: `6ea3fd49ac268e7e50243fbb6a159e865793ce6b7c10de529cfae0be71b868de`
+- Manifest: `analysis/output/t0015_diag_t0008_all_dispatch_force_idx11_manifest.json`
+
+### Byte-level changes
+
+- `0x100A`: `1ee5` -> `0be6`
+- `0x1034`: `2de4` -> `0be6`
+- `0x1064`: `0a88` -> `0b88`
+- `0x1080`: `0366` -> `0be6`
+
+### Current status
+
+- Diagnostic build generated; awaiting hardware A/B capture.
+
