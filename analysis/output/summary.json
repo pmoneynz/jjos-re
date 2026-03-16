@@ -1,8 +1,8 @@
 {
-  "file_name": "mpc2500_jv313.bin",
-  "size_bytes": 894040,
-  "sha256": "7a64b6c82bf47bff3f0091fa90a0c7162fc563352f1c779a2c59f9da449e66b9",
-  "entropy_bits_per_byte": 6.8694,
+  "file_name": "mpc2500.bin",
+  "size_bytes": 784916,
+  "sha256": "6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5",
+  "entropy_bits_per_byte": 6.8587,
   "vector_words": [
     {
       "index": 0,
@@ -57,7 +57,7 @@
     {
       "index": 10,
       "offset": 40,
-      "value": 0
+      "value": 1207959552
     },
     {
       "index": 11,
@@ -77,7 +77,7 @@
     {
       "index": 14,
       "offset": 56,
-      "value": 0
+      "value": 1090519040
     },
     {
       "index": 15,
@@ -88,7 +88,7 @@
   "base_candidates": [
     {
       "base": 150994944,
-      "mapped_word_count": 6281,
+      "mapped_word_count": 5485,
       "samples": [
         {
           "file_offset": 4,
@@ -154,73 +154,73 @@
     },
     {
       "base": 167772160,
-      "mapped_word_count": 268,
+      "mapped_word_count": 248,
       "samples": [
         {
-          "file_offset": 108352,
+          "file_offset": 105848,
           "value": 168197428,
           "mapped_file_offset": 425268
         },
         {
-          "file_offset": 108376,
+          "file_offset": 105872,
           "value": 168230982,
           "mapped_file_offset": 458822
         },
         {
-          "file_offset": 109268,
-          "value": 168283451,
-          "mapped_file_offset": 511291
+          "file_offset": 106032,
+          "value": 168197428,
+          "mapped_file_offset": 425268
         },
         {
-          "file_offset": 109320,
-          "value": 168170877,
-          "mapped_file_offset": 398717
+          "file_offset": 106056,
+          "value": 168230982,
+          "mapped_file_offset": 458822
         },
         {
-          "file_offset": 109476,
-          "value": 168170109,
-          "mapped_file_offset": 397949
+          "file_offset": 106272,
+          "value": 168222005,
+          "mapped_file_offset": 449845
         },
         {
-          "file_offset": 109632,
-          "value": 168189233,
-          "mapped_file_offset": 417073
+          "file_offset": 106984,
+          "value": 168226097,
+          "mapped_file_offset": 453937
         },
         {
-          "file_offset": 109692,
-          "value": 168189233,
-          "mapped_file_offset": 417073
+          "file_offset": 107000,
+          "value": 168059746,
+          "mapped_file_offset": 287586
         },
         {
-          "file_offset": 109716,
+          "file_offset": 107200,
+          "value": 168226097,
+          "mapped_file_offset": 453937
+        },
+        {
+          "file_offset": 107216,
+          "value": 168125282,
+          "mapped_file_offset": 353122
+        },
+        {
+          "file_offset": 107272,
           "value": 168099910,
           "mapped_file_offset": 327750
         },
         {
-          "file_offset": 110392,
-          "value": 168279356,
-          "mapped_file_offset": 507196
-        },
-        {
-          "file_offset": 110540,
+          "file_offset": 107804,
           "value": 168295406,
           "mapped_file_offset": 523246
         },
         {
-          "file_offset": 110568,
+          "file_offset": 107832,
           "value": 168125665,
           "mapped_file_offset": 353505
-        },
-        {
-          "file_offset": 112756,
-          "value": 168223591,
-          "mapped_file_offset": 451431
         }
       ]
     },
     {
       "base": 134217728,
-      "mapped_word_count": 221,
+      "mapped_word_count": 215,
       "samples": [
         {
           "file_offset": 3968,
@@ -233,11 +233,6 @@
           "mapped_file_offset": 524482
         },
         {
-          "file_offset": 7928,
-          "value": 135020763,
-          "mapped_file_offset": 803035
-        },
-        {
           "file_offset": 9272,
           "value": 134742242,
           "mapped_file_offset": 524514
@@ -246,16 +241,6 @@
           "file_offset": 11960,
           "value": 134496753,
           "mapped_file_offset": 279025
-        },
-        {
-          "file_offset": 17336,
-          "value": 135086288,
-          "mapped_file_offset": 868560
-        },
-        {
-          "file_offset": 18680,
-          "value": 135004355,
-          "mapped_file_offset": 786627
         },
         {
           "file_offset": 21368,
@@ -281,12 +266,27 @@
           "file_offset": 22916,
           "value": 134251008,
           "mapped_file_offset": 33280
+        },
+        {
+          "file_offset": 23028,
+          "value": 134513153,
+          "mapped_file_offset": 295425
+        },
+        {
+          "file_offset": 23168,
+          "value": 134513153,
+          "mapped_file_offset": 295425
+        },
+        {
+          "file_offset": 23252,
+          "value": 134251008,
+          "mapped_file_offset": 33280
         }
       ]
     },
     {
       "base": 16777216,
-      "mapped_word_count": 188,
+      "mapped_word_count": 182,
       "samples": [
         {
           "file_offset": 512,
@@ -312,11 +312,6 @@
           "file_offset": 8256,
           "value": 16777216,
           "mapped_file_offset": 0
-        },
-        {
-          "file_offset": 8572,
-          "value": 17597061,
-          "mapped_file_offset": 819845
         },
         {
           "file_offset": 8928,
@@ -347,6 +342,11 @@
           "file_offset": 15468,
           "value": 16826496,
           "mapped_file_offset": 49280
+        },
+        {
+          "file_offset": 16320,
+          "value": 16777216,
+          "mapped_file_offset": 0
         }
       ]
     }
@@ -360,69 +360,58 @@
   "string_density_by_64k": [
     {
       "offset": 0,
-      "string_count": 348
+      "string_count": 349
     },
     {
       "offset": 65536,
-      "string_count": 739
+      "string_count": 765
     },
     {
       "offset": 131072,
-      "string_count": 1283
+      "string_count": 1334
     },
     {
       "offset": 196608,
-      "string_count": 1339
+      "string_count": 1184
     },
     {
       "offset": 262144,
-      "string_count": 745
+      "string_count": 746
     },
     {
       "offset": 327680,
-      "string_count": 932
+      "string_count": 770
     },
     {
       "offset": 393216,
-      "string_count": 755
+      "string_count": 818
     },
     {
       "offset": 458752,
-      "string_count": 823
+      "string_count": 690
     },
     {
       "offset": 524288,
-      "string_count": 766
+      "string_count": 994
     },
     {
       "offset": 589824,
-      "string_count": 1121
+      "string_count": 1077
     },
     {
       "offset": 655360,
-      "string_count": 1282
+      "string_count": 1616
     },
     {
       "offset": 720896,
-      "string_count": 1087
-    },
-    {
-      "offset": 786432,
-      "string_count": 2375
-    },
-    {
-      "offset": 851968,
-      "string_count": 519
+      "string_count": 1697
     }
   ],
   "exact_string_refs_base_0x09000000": {
     "version_banner": [],
     "boot_update_title": [],
     "loading_os_file": [],
-    "boot_flash_progress_erase": [
-      325148,
-      561808
-    ],
+    "boot_flash_progress_erase": [],
     "boot_flash_progress_write": [],
     "late_not_os_file": [],
     "late_os_update": [],
@@ -431,7 +420,7 @@
     "late_flash_progress_write": []
   },
   "update_range_refs": {
-    "boot_update_block_count": 207,
+    "boot_update_block_count": 216,
     "progress_block_count": 3,
     "late_ui_block_count": 0,
     "late_progress_block_count": 0,
@@ -487,109 +476,97 @@
       "low_24_target": 819715
     },
     {
-      "file_offset": 108602,
+      "file_offset": 106296,
       "pointer_value": 168624198,
       "prefix": 10,
       "low_24_target": 852038
     },
     {
-      "file_offset": 118182,
+      "file_offset": 113784,
       "pointer_value": 168624198,
       "prefix": 10,
       "low_24_target": 852038
     },
     {
-      "file_offset": 118356,
+      "file_offset": 113990,
       "pointer_value": 168624198,
       "prefix": 10,
       "low_24_target": 852038
     },
     {
-      "file_offset": 118562,
+      "file_offset": 114196,
       "pointer_value": 168624198,
       "prefix": 10,
       "low_24_target": 852038
     },
     {
-      "file_offset": 119250,
+      "file_offset": 114658,
       "pointer_value": 168624198,
       "prefix": 10,
       "low_24_target": 852038
     },
     {
-      "file_offset": 119752,
+      "file_offset": 115104,
       "pointer_value": 168624198,
       "prefix": 10,
       "low_24_target": 852038
     },
     {
-      "file_offset": 120212,
+      "file_offset": 115564,
       "pointer_value": 168624198,
       "prefix": 10,
       "low_24_target": 852038
     },
     {
-      "file_offset": 120388,
+      "file_offset": 115740,
       "pointer_value": 168624198,
       "prefix": 10,
       "low_24_target": 852038
     },
     {
-      "file_offset": 120604,
+      "file_offset": 116244,
       "pointer_value": 168624198,
       "prefix": 10,
       "low_24_target": 852038
     },
     {
-      "file_offset": 121298,
+      "file_offset": 116458,
       "pointer_value": 168624198,
       "prefix": 10,
       "low_24_target": 852038
     },
     {
-      "file_offset": 121534,
+      "file_offset": 116980,
       "pointer_value": 168624198,
       "prefix": 10,
       "low_24_target": 852038
     },
     {
-      "file_offset": 122038,
-      "pointer_value": 168624198,
-      "prefix": 10,
-      "low_24_target": 852038
-    },
-    {
-      "file_offset": 527800,
-      "pointer_value": 168602932,
-      "prefix": 10,
-      "low_24_target": 830772
-    },
-    {
-      "file_offset": 807328,
+      "file_offset": 706788,
       "pointer_value": 168630791,
       "prefix": 10,
       "low_24_target": 858631
     },
     {
-      "file_offset": 813436,
+      "file_offset": 712896,
       "pointer_value": 168619319,
       "prefix": 10,
       "low_24_target": 847159
     },
     {
-      "file_offset": 813524,
+      "file_offset": 712984,
       "pointer_value": 168619319,
       "prefix": 10,
       "low_24_target": 847159
     },
     {
-      "file_offset": 857932,
+      "file_offset": 755524,
       "pointer_value": 135069439,
       "prefix": 8,
       "low_24_target": 851711
     },
     {
-      "file_offset": 866420,
+      "file_offset": 762080,
       "pointer_value": 135069696,
       "prefix": 8,
       "low_24_target": 851968
@@ -613,389 +590,389 @@
         "text": "  Too many bars! (999max)   "
       },
       {
-        "offset": 282920,
+        "offset": 258754,
         "length": 7,
-        "text": "lBAr#g\""
+        "text": "lBAr#gn"
       },
       {
-        "offset": 394277,
-        "length": 6,
-        "text": "BAr.gw"
+        "offset": 322959,
+        "length": 5,
+        "text": "BAr.g"
       },
       {
-        "offset": 402764,
+        "offset": 331432,
         "length": 7,
-        "text": "lBAr#gC"
+        "text": "lBAr#gn"
       },
       {
-        "offset": 416172,
+        "offset": 343970,
         "length": 7,
-        "text": "lBAr#gp"
+        "text": "lBAr#gv"
       },
       {
-        "offset": 587501,
+        "offset": 679492,
         "length": 4,
-        "text": "BArj"
+        "text": "song"
       },
       {
-        "offset": 815464,
+        "offset": 714764,
         "length": 8,
         "text": "Sequence"
       },
       {
-        "offset": 815748,
+        "offset": 714792,
         "length": 4,
         "text": "Song"
       },
       {
-        "offset": 815772,
+        "offset": 714816,
         "length": 7,
         "text": "Track01"
       },
       {
-        "offset": 816636,
+        "offset": 715552,
         "length": 11,
         "text": "TRACK DATA:"
       },
       {
-        "offset": 816716,
+        "offset": 715652,
         "length": 14,
         "text": "ALL_SEQS&SONGS"
       },
       {
-        "offset": 817808,
+        "offset": 716736,
         "length": 5,
         "text": "Bars:"
       },
       {
-        "offset": 817932,
-        "length": 11,
-        "text": "Change bars"
-      },
-      {
-        "offset": 817944,
-        "length": 14,
-        "text": "Sequence Bars:"
-      },
-      {
-        "offset": 817960,
-        "length": 14,
-        "text": "Recorded Bars:"
-      },
-      {
-        "offset": 817976,
-        "length": 31,
-        "text": "Change into the recorded bars ?"
-      },
-      {
-        "offset": 818016,
+        "offset": 716808,
         "length": 14,
         "text": "Program Change"
       },
       {
-        "offset": 818072,
+        "offset": 716864,
         "length": 24,
         "text": "Transmit program changes"
       },
       {
-        "offset": 818100,
+        "offset": 716892,
         "length": 14,
         "text": "in this track:"
       },
       {
-        "offset": 818172,
+        "offset": 716908,
         "length": 16,
         "text": "Track Mute Event"
       },
       {
-        "offset": 818192,
+        "offset": 716928,
         "length": 22,
         "text": "Use track mute events:"
       },
       {
-        "offset": 819180,
-        "length": 15,
-        "text": "Load a Sequence"
+        "offset": 717740,
+        "length": 28,
+        "text": "Type:SAVE ALL SEQS AND SONGS"
       },
       {
-        "offset": 819208,
-        "length": 15,
-        "text": "SEQUENCE MEMORY"
-      },
-      {
-        "offset": 819224,
-        "length": 21,
-        "text": "Sequence memory full!"
-      },
-      {
-        "offset": 819304,
-        "length": 25,
-        "text": "Load ALL(SEQS&SONGS) File"
-      },
-      {
-        "offset": 819364,
-        "length": 26,
-        "text": "      sequence and songs!!"
-      },
-      {
-        "offset": 819392,
-        "length": 31,
-        "text": "  SEQ will load single sequence"
-      },
-      {
-        "offset": 819584,
-        "length": 25,
-        "text": "and ALL(SEQS&SONGS)files."
-      },
-      {
-        "offset": 820444,
-        "length": 18,
-        "text": "SAVE ALL SEQUENCES"
-      },
-      {
-        "offset": 820464,
-        "length": 16,
-        "text": "AND SONGS.(Pack)"
-      },
-      {
-        "offset": 820528,
-        "length": 20,
-        "text": "ALL^SEQS&SONGS(Pack)"
-      },
-      {
-        "offset": 820680,
+        "offset": 717832,
         "length": 24,
         "text": "This will erase sequence"
       },
       {
-        "offset": 820748,
+        "offset": 717908,
         "length": 23,
         "text": "SEQUENCES DATA IN FLASH"
       },
       {
-        "offset": 821216,
+        "offset": 718160,
+        "length": 20,
+        "text": "Type:SAVE A SEQUENCE"
+      },
+      {
+        "offset": 718352,
         "length": 11,
         "text": "blank bars."
       },
       {
-        "offset": 821240,
+        "offset": 718376,
         "length": 14,
         "text": "selected bars!"
       },
       {
-        "offset": 821264,
+        "offset": 718400,
         "length": 4,
         "text": "BARS"
       },
       {
-        "offset": 821316,
+        "offset": 718452,
         "length": 10,
         "text": "First bar:"
       },
       {
-        "offset": 821328,
+        "offset": 718464,
         "length": 10,
         "text": "After bar:"
       },
       {
-        "offset": 821340,
+        "offset": 718476,
         "length": 9,
         "text": "Last bar:"
       },
       {
-        "offset": 821380,
+        "offset": 718516,
         "length": 15,
         "text": "Number of bars:"
       },
       {
-        "offset": 821560,
+        "offset": 718696,
         "length": 10,
         "text": "TEMPO     "
       },
       {
-        "offset": 821592,
+        "offset": 718728,
         "length": 10,
         "text": "TRACK MUTE"
       },
       {
-        "offset": 821748,
+        "offset": 718884,
         "length": 5,
         "text": "TRACK"
       },
       {
-        "offset": 821948,
+        "offset": 719148,
         "length": 14,
         "text": "PROGRAM CHANGE"
       },
       {
-        "offset": 822056,
+        "offset": 719256,
         "length": 6,
         "text": "TRACK:"
       },
       {
-        "offset": 822072,
+        "offset": 719272,
         "length": 25,
         "text": "---- End of sequence ----"
       },
       {
-        "offset": 822236,
+        "offset": 719436,
         "length": 4,
         "text": "BARS"
       },
       {
-        "offset": 822364,
+        "offset": 719564,
         "length": 19,
         "text": "(Except drum track)"
       },
       {
-        "offset": 822412,
+        "offset": 719612,
         "length": 4,
         "text": "BARS"
       },
       {
-        "offset": 822852,
+        "offset": 720476,
         "length": 5,
         "text": "TEMPO"
       },
       {
-        "offset": 823724,
-        "length": 5,
-        "text": "TEMPO"
-      },
-      {
-        "offset": 823760,
+        "offset": 720512,
         "length": 15,
         "text": "Original tempo:"
       },
       {
-        "offset": 823984,
+        "offset": 720712,
         "length": 29,
         "text": "Active track receive channel:"
       },
       {
-        "offset": 824032,
+        "offset": 720760,
         "length": 34,
         "text": "Sequence change by program change:"
       },
       {
-        "offset": 824328,
+        "offset": 721056,
         "length": 8,
         "text": "Sequence"
       },
       {
-        "offset": 824348,
+        "offset": 721076,
         "length": 5,
         "text": "Tempo"
       },
       {
-        "offset": 824356,
+        "offset": 721084,
         "length": 4,
         "text": "Bars"
       },
       {
-        "offset": 824420,
+        "offset": 721148,
         "length": 5,
         "text": "Song:"
       },
       {
-        "offset": 824428,
+        "offset": 721156,
         "length": 13,
         "text": "(end of song)"
       },
       {
-        "offset": 824680,
-        "length": 26,
-        "text": "<<STEP>> <<BAR>> STOP PLAY"
+        "offset": 721580,
+        "length": 5,
+        "text": "TEMPO"
       },
       {
-        "offset": 824708,
-        "length": 6,
-        "text": "Track="
-      },
-      {
-        "offset": 824928,
-        "length": 6,
-        "text": "Track:"
-      },
-      {
-        "offset": 825356,
+        "offset": 721600,
         "length": 15,
-        "text": "TRACK^(All^Pad)"
+        "text": "Original tempo:"
       },
       {
-        "offset": 826744,
-        "length": 11,
-        "text": "Change Bars"
+        "offset": 721640,
+        "length": 12,
+        "text": "Detect Tempo"
       },
       {
-        "offset": 826756,
-        "length": 26,
-        "text": "Current=     >   New bars:"
+        "offset": 721684,
+        "length": 25,
+        "text": "sample tempo and enter to"
       },
       {
-        "offset": 826816,
-        "length": 11,
-        "text": "last bars!!"
+        "offset": 721712,
+        "length": 19,
+        "text": "current tempo find."
       },
       {
-        "offset": 826860,
-        "length": 20,
-        "text": "bars after last bar."
-      },
-      {
-        "offset": 826928,
-        "length": 14,
-        "text": "Number of bars"
-      },
-      {
-        "offset": 826952,
-        "length": 11,
-        "text": "First bar :"
-      },
-      {
-        "offset": 826964,
-        "length": 11,
-        "text": " Last bar :"
-      },
-      {
-        "offset": 826980,
-        "length": 15,
-        "text": "Number of bars:"
-      },
-      {
-        "offset": 827152,
-        "length": 17,
-        "text": "END OF SEQUENCE  "
-      },
-      {
-        "offset": 827208,
-        "length": 8,
-        "text": "Sequence"
-      },
-      {
-        "offset": 827252,
-        "length": 14,
-        "text": "Sequence name:"
-      },
-      {
-        "offset": 827268,
-        "length": 14,
-        "text": "Next sequence:"
-      },
-      {
-        "offset": 827284,
-        "length": 16,
-        "text": "Sequence Default"
-      },
-      {
-        "offset": 827328,
+        "offset": 721916,
         "length": 6,
         "text": "Tempo:"
       },
       {
-        "offset": 827336,
+        "offset": 721940,
+        "length": 27,
+        "text": "tempo %d last beat %d : %ld"
+      },
+      {
+        "offset": 722292,
+        "length": 26,
+        "text": "<<STEP>> <<BAR>> STOP PLAY"
+      },
+      {
+        "offset": 722320,
         "length": 6,
-        "text": "Bars :"
+        "text": "Track="
+      },
+      {
+        "offset": 722548,
+        "length": 6,
+        "text": "Track:"
+      },
+      {
+        "offset": 724040,
+        "length": 24,
+        "text": "Continuous sample track:"
+      },
+      {
+        "offset": 724324,
+        "length": 11,
+        "text": "Change Bars"
+      },
+      {
+        "offset": 724336,
+        "length": 26,
+        "text": "Current=     >   New bars:"
+      },
+      {
+        "offset": 724396,
+        "length": 11,
+        "text": "last bars!!"
+      },
+      {
+        "offset": 724440,
+        "length": 20,
+        "text": "bars after last bar."
+      },
+      {
+        "offset": 724508,
+        "length": 14,
+        "text": "Number of bars"
+      },
+      {
+        "offset": 724532,
+        "length": 11,
+        "text": "First bar :"
+      },
+      {
+        "offset": 724544,
+        "length": 11,
+        "text": " Last bar :"
+      },
+      {
+        "offset": 724560,
+        "length": 15,
+        "text": "Number of bars:"
+      },
+      {
+        "offset": 724644,
+        "length": 8,
+        "text": "Sequence"
+      },
+      {
+        "offset": 724688,
+        "length": 14,
+        "text": "Sequence name:"
+      },
+      {
+        "offset": 724720,
+        "length": 13,
+        "text": "Copy Sequence"
+      },
+      {
+        "offset": 724764,
+        "length": 15,
+        "text": "Delete Sequence"
+      },
+      {
+        "offset": 724808,
+        "length": 15,
+        "text": "this sequence!!"
+      },
+      {
+        "offset": 724832,
+        "length": 20,
+        "text": "Delete ALL Sequences"
+      },
+      {
+        "offset": 724888,
+        "length": 11,
+        "text": "sequences!!"
+      },
+      {
+        "offset": 724948,
+        "length": 26,
+        "text": "setups of this sequence as"
+      },
+      {
+        "offset": 725432,
+        "length": 12,
+        "text": "Tempo Change"
+      },
+      {
+        "offset": 725448,
+        "length": 14,
+        "text": "Current tempo="
+      },
+      {
+        "offset": 725484,
+        "length": 13,
+        "text": "Tempo change:"
+      },
+      {
+        "offset": 725500,
+        "length": 14,
+        "text": "Initial tempo:"
+      },
+      {
+        "offset": 725516,
+        "length": 9,
+        "text": "Fix Tempo"
       }
     ],
     "sampling_audio": [
@@ -1015,389 +992,374 @@
         "text": "     ChopShop sample !!     "
       },
       {
-        "offset": 815176,
-        "length": 4,
-        "text": "MONO"
-      },
-      {
-        "offset": 815236,
-        "length": 8,
-        "text": "ANALOG  "
-      },
-      {
-        "offset": 815248,
-        "length": 8,
-        "text": "DIGITAL "
-      },
-      {
-        "offset": 815272,
-        "length": 6,
-        "text": "MONO L"
-      },
-      {
-        "offset": 815280,
-        "length": 6,
-        "text": "MONO R"
-      },
-      {
-        "offset": 815288,
-        "length": 6,
-        "text": "STEREO"
-      },
-      {
-        "offset": 817960,
-        "length": 14,
-        "text": "Recorded Bars:"
-      },
-      {
-        "offset": 817976,
-        "length": 31,
-        "text": "Change into the recorded bars ?"
-      },
-      {
-        "offset": 818856,
-        "length": 15,
-        "text": "Sample Exists!!"
-      },
-      {
-        "offset": 818872,
-        "length": 20,
-        "text": "Sample name exists!!"
-      },
-      {
-        "offset": 819060,
-        "length": 12,
-        "text": "WITH SAMPLE "
-      },
-      {
-        "offset": 819076,
-        "length": 20,
-        "text": "Replace same samples"
-      },
-      {
-        "offset": 819164,
-        "length": 13,
-        "text": "and samples!!"
-      },
-      {
-        "offset": 819552,
-        "length": 29,
-        "text": "Load all programs and samples"
-      },
-      {
-        "offset": 819740,
-        "length": 26,
-        "text": "    programs and samples!!"
-      },
-      {
-        "offset": 820012,
-        "length": 28,
-        "text": "Sample assign to pad Window:"
-      },
-      {
-        "offset": 820428,
-        "length": 12,
-        "text": "AND SAMPLES."
-      },
-      {
-        "offset": 820512,
-        "length": 12,
-        "text": "ALL^SAMPLES."
-      },
-      {
-        "offset": 820820,
-        "length": 20,
-        "text": "programs and samples"
-      },
-      {
-        "offset": 820880,
-        "length": 22,
-        "text": "ALL PROGRAMS & SAMPLES"
-      },
-      {
-        "offset": 822472,
-        "length": 18,
-        "text": "Free sample memory"
-      },
-      {
-        "offset": 822508,
-        "length": 12,
-        "text": "Time MONO  :"
-      },
-      {
-        "offset": 822524,
-        "length": 12,
-        "text": "Time STEREO:"
-      },
-      {
-        "offset": 822540,
-        "length": 11,
-        "text": "Copy Sample"
-      },
-      {
-        "offset": 822576,
-        "length": 7,
-        "text": "Sample:"
-      },
-      {
-        "offset": 822596,
-        "length": 13,
-        "text": "Delete Sample"
-      },
-      {
-        "offset": 822612,
-        "length": 7,
-        "text": "Sample="
-      },
-      {
-        "offset": 822648,
-        "length": 13,
-        "text": "this sample!!"
-      },
-      {
-        "offset": 822668,
-        "length": 18,
-        "text": "Delete ALL Samples"
-      },
-      {
-        "offset": 822720,
-        "length": 9,
-        "text": "samples!!"
-      },
-      {
-        "offset": 822732,
-        "length": 11,
-        "text": "Sample list"
-      },
-      {
-        "offset": 822804,
-        "length": 8,
-        "text": "(STEREO)"
-      },
-      {
-        "offset": 822816,
-        "length": 8,
-        "text": "( MONO )"
-      },
-      {
-        "offset": 823093,
-        "length": 4,
-        "text": "MONO"
-      },
-      {
-        "offset": 823105,
-        "length": 4,
-        "text": "MONO"
-      },
-      {
-        "offset": 823220,
-        "length": 6,
-        "text": "SAMPLE"
-      },
-      {
-        "offset": 823508,
-        "length": 13,
-        "text": "Purge Samples"
-      },
-      {
-        "offset": 823552,
-        "length": 23,
-        "text": "all samples not used in"
-      },
-      {
-        "offset": 823600,
-        "length": 20,
-        "text": "    samples not used"
-      },
-      {
-        "offset": 823708,
-        "length": 15,
-        "text": "Pad Sample Edit"
-      },
-      {
-        "offset": 823836,
-        "length": 27,
-        "text": "  KEEP:Keeps as new sample."
-      },
-      {
-        "offset": 823924,
-        "length": 11,
-        "text": "New sample:"
-      },
-      {
-        "offset": 824508,
-        "length": 19,
-        "text": "Record mix changes:"
-      },
-      {
-        "offset": 824756,
+        "offset": 716604,
         "length": 6,
         "text": "RECORD"
       },
       {
-        "offset": 824808,
+        "offset": 716612,
+        "length": 12,
+        "text": "Recording..."
+      },
+      {
+        "offset": 717784,
+        "length": 32,
+        "text": "Type:SAVE ALL PROGRAMS & SAMPLES"
+      },
+      {
+        "offset": 717980,
+        "length": 20,
+        "text": "programs and samples"
+      },
+      {
+        "offset": 718040,
+        "length": 22,
+        "text": "ALL PROGRAMS & SAMPLES"
+      },
+      {
+        "offset": 718104,
+        "length": 18,
+        "text": "Type:SAVE A SAMPLE"
+      },
+      {
+        "offset": 719672,
         "length": 11,
-        "text": "Recording.."
+        "text": "SAMPLE LIST"
       },
       {
-        "offset": 824836,
-        "length": 8,
-        "text": "ANALOG  "
-      },
-      {
-        "offset": 824848,
-        "length": 8,
-        "text": "DIGITAL "
-      },
-      {
-        "offset": 824936,
-        "length": 13,
-        "text": "Sample Memory"
-      },
-      {
-        "offset": 825080,
-        "length": 13,
-        "text": "Record event:"
-      },
-      {
-        "offset": 825096,
-        "length": 8,
-        "text": "Sample01"
-      },
-      {
-        "offset": 825696,
+        "offset": 719845,
         "length": 4,
         "text": "MONO"
       },
       {
-        "offset": 826364,
-        "length": 29,
-        "text": "Mute/stop of one-shot sample:"
+        "offset": 719857,
+        "length": 4,
+        "text": "MONO"
       },
       {
-        "offset": 827016,
-        "length": 7,
-        "text": "SAMPLE:"
-      },
-      {
-        "offset": 827048,
-        "length": 7,
-        "text": "SAMPLE:"
-      },
-      {
-        "offset": 827672,
-        "length": 27,
-        "text": "Duration of recorded notes:"
-      },
-      {
-        "offset": 827960,
-        "length": 25,
-        "text": "timing of recorded notes."
-      },
-      {
-        "offset": 830140,
-        "length": 12,
-        "text": "WITH SAMPLES"
-      },
-      {
-        "offset": 830156,
-        "length": 21,
-        "text": "Replace same samples:"
-      },
-      {
-        "offset": 831508,
-        "length": 20,
-        "text": "Loading sample......"
-      },
-      {
-        "offset": 836468,
-        "length": 7,
-        "text": "ANALOG "
-      },
-      {
-        "offset": 836476,
-        "length": 7,
-        "text": "DIGITAL"
-      },
-      {
-        "offset": 837024,
+        "offset": 719972,
         "length": 6,
-        "text": "Sample"
+        "text": "SAMPLE"
       },
       {
-        "offset": 837276,
-        "length": 26,
-        "text": "Convert to patched phrase."
+        "offset": 720260,
+        "length": 13,
+        "text": "Purge Samples"
       },
       {
-        "offset": 837348,
-        "length": 26,
-        "text": "Convert to sliced samples."
+        "offset": 720304,
+        "length": 23,
+        "text": "all samples not used in"
       },
       {
-        "offset": 837396,
-        "length": 26,
-        "text": "   Sample is too short !! "
+        "offset": 720352,
+        "length": 20,
+        "text": "    samples not used"
       },
       {
-        "offset": 837500,
-        "length": 11,
-        "text": "New sample:"
+        "offset": 720460,
+        "length": 15,
+        "text": "Pad Sample Edit"
       },
       {
-        "offset": 837512,
-        "length": 31,
-        "text": "[F2] Convert to SLICED SAMPLES."
-      },
-      {
-        "offset": 837544,
-        "length": 31,
-        "text": "[F3] Convert to PATCHED PHRASE."
-      },
-      {
-        "offset": 837672,
-        "length": 11,
-        "text": "Sample Edit"
-      },
-      {
-        "offset": 837784,
-        "length": 11,
-        "text": "New sample:"
-      },
-      {
-        "offset": 838060,
-        "length": 25,
-        "text": "sample tempo and enter to"
-      },
-      {
-        "offset": 838140,
-        "length": 30,
-        "text": "[MANUAL] From sample START,END"
-      },
-      {
-        "offset": 838228,
+        "offset": 720588,
         "length": 27,
         "text": "  KEEP:Keeps as new sample."
       },
       {
-        "offset": 838316,
+        "offset": 720676,
+        "length": 11,
+        "text": "New sample:"
+      },
+      {
+        "offset": 721228,
+        "length": 5,
+        "text": "MONO "
+      },
+      {
+        "offset": 721292,
+        "length": 11,
+        "text": "Sample Edit"
+      },
+      {
+        "offset": 721404,
+        "length": 11,
+        "text": "New sample:"
+      },
+      {
+        "offset": 721684,
+        "length": 25,
+        "text": "sample tempo and enter to"
+      },
+      {
+        "offset": 721748,
+        "length": 27,
+        "text": "  KEEP:Keeps as new sample."
+      },
+      {
+        "offset": 721836,
         "length": 19,
         "text": "Patched Phrase Edit"
       },
       {
-        "offset": 838344,
+        "offset": 721864,
         "length": 26,
         "text": "Re-build patched phrase as"
       },
       {
-        "offset": 838372,
+        "offset": 721892,
         "length": 14,
         "text": "normal sample."
       },
       {
-        "offset": 838424,
+        "offset": 722120,
         "length": 19,
-        "text": "Edit:STEREO^L=>MONO"
+        "text": "Record mix changes:"
+      },
+      {
+        "offset": 722380,
+        "length": 6,
+        "text": "RECORD"
+      },
+      {
+        "offset": 722432,
+        "length": 11,
+        "text": "Recording.."
+      },
+      {
+        "offset": 722460,
+        "length": 8,
+        "text": "ANALOG  "
+      },
+      {
+        "offset": 722472,
+        "length": 8,
+        "text": "DIGITAL "
+      },
+      {
+        "offset": 722556,
+        "length": 13,
+        "text": "Sample Memory"
+      },
+      {
+        "offset": 722700,
+        "length": 13,
+        "text": "Record event:"
+      },
+      {
+        "offset": 722716,
+        "length": 8,
+        "text": "Sample01"
+      },
+      {
+        "offset": 723292,
+        "length": 4,
+        "text": "MONO"
+      },
+      {
+        "offset": 724040,
+        "length": 24,
+        "text": "Continuous sample track:"
+      },
+      {
+        "offset": 724072,
+        "length": 29,
+        "text": "Mute/stop of one-shot sample:"
+      },
+      {
+        "offset": 725044,
+        "length": 27,
+        "text": "Duration of recorded notes:"
+      },
+      {
+        "offset": 725252,
+        "length": 25,
+        "text": "timing of recorded notes."
+      },
+      {
+        "offset": 726992,
+        "length": 6,
+        "text": "Sample"
+      },
+      {
+        "offset": 727024,
+        "length": 12,
+        "text": "Sample name:"
+      },
+      {
+        "offset": 727064,
+        "length": 11,
+        "text": "Copy Sample"
+      },
+      {
+        "offset": 727092,
+        "length": 7,
+        "text": "Sample:"
+      },
+      {
+        "offset": 727112,
+        "length": 13,
+        "text": "Delete Sample"
+      },
+      {
+        "offset": 727128,
+        "length": 7,
+        "text": "Sample="
+      },
+      {
+        "offset": 727164,
+        "length": 13,
+        "text": "this sample!!"
+      },
+      {
+        "offset": 727184,
+        "length": 18,
+        "text": "Delete ALL Samples"
+      },
+      {
+        "offset": 727236,
+        "length": 9,
+        "text": "samples!!"
+      },
+      {
+        "offset": 727296,
+        "length": 24,
+        "text": "setups of this sample as"
+      },
+      {
+        "offset": 728092,
+        "length": 13,
+        "text": "Load a Sample"
+      },
+      {
+        "offset": 728140,
+        "length": 15,
+        "text": "Sample Exists!!"
+      },
+      {
+        "offset": 728156,
+        "length": 20,
+        "text": "Sample name exists!!"
+      },
+      {
+        "offset": 728328,
+        "length": 12,
+        "text": "WITH SAMPLE "
+      },
+      {
+        "offset": 728344,
+        "length": 20,
+        "text": "Replace same samples"
+      },
+      {
+        "offset": 728432,
+        "length": 13,
+        "text": "and samples!!"
+      },
+      {
+        "offset": 728812,
+        "length": 29,
+        "text": "Load all programs and samples"
+      },
+      {
+        "offset": 729040,
+        "length": 26,
+        "text": "    programs and samples!!"
+      },
+      {
+        "offset": 729324,
+        "length": 12,
+        "text": "WITH SAMPLES"
+      },
+      {
+        "offset": 729340,
+        "length": 21,
+        "text": "Replace same samples:"
+      },
+      {
+        "offset": 732548,
+        "length": 11,
+        "text": "New sample:"
+      },
+      {
+        "offset": 735232,
+        "length": 16,
+        "text": "Direct Recording"
+      },
+      {
+        "offset": 735280,
+        "length": 22,
+        "text": "DIRECT RECORDING mode."
+      },
+      {
+        "offset": 735868,
+        "length": 7,
+        "text": "ANALOG "
+      },
+      {
+        "offset": 735876,
+        "length": 7,
+        "text": "DIGITAL"
+      },
+      {
+        "offset": 748795,
+        "length": 13,
+        "text": "126-MONO ON  "
+      },
+      {
+        "offset": 750982,
+        "length": 16,
+        "text": "126-MONO MODE ON"
+      },
+      {
+        "offset": 760760,
+        "length": 28,
+        "text": "     Sample name exist!!    "
+      },
+      {
+        "offset": 760789,
+        "length": 28,
+        "text": "     No sample wave !!      "
+      },
+      {
+        "offset": 760905,
+        "length": 28,
+        "text": "     ChopShop sample !!     "
+      },
+      {
+        "offset": 763370,
+        "length": 16,
+        "text": "SAMPLES         "
+      },
+      {
+        "offset": 763472,
+        "length": 16,
+        "text": "MPC2000 SAMPLES "
+      },
+      {
+        "offset": 765400,
+        "length": 6,
+        "text": "MONO L"
+      },
+      {
+        "offset": 765407,
+        "length": 6,
+        "text": "MONO R"
+      },
+      {
+        "offset": 765414,
+        "length": 6,
+        "text": "STEREO"
+      },
+      {
+        "offset": 768022,
+        "length": 14,
+        "text": "PATCHED PHRASE"
+      },
+      {
+        "offset": 768037,
+        "length": 14,
+        "text": "SLICED SAMPLES"
       }
     ],
     "midi_program": [
@@ -1407,367 +1369,347 @@
         "text": "    Program name exist!!    "
       },
       {
-        "offset": 815156,
-        "length": 7,
-        "text": "NOTE^ON"
+        "offset": 680136,
+        "length": 4,
+        "text": "midi"
       },
       {
-        "offset": 816544,
+        "offset": 715468,
         "length": 26,
         "text": "Waiting for MIDI time code"
       },
       {
-        "offset": 816572,
+        "offset": 715496,
         "length": 23,
         "text": "Waiting for MIDI 'Play'"
       },
       {
-        "offset": 816844,
-        "length": 73,
-        "text": "%$*R(&.,0/-+17356EQPABLM8>?@IJG'49:;<=CDFHKNO#)2STUVWXYZ[\\]^_`abProgram01"
-      },
-      {
-        "offset": 817876,
-        "length": 5,
-        "text": "Midi:"
-      },
-      {
-        "offset": 818016,
-        "length": 14,
-        "text": "Program Change"
-      },
-      {
-        "offset": 818072,
-        "length": 24,
-        "text": "Transmit program changes"
-      },
-      {
-        "offset": 818976,
-        "length": 14,
-        "text": "Load a Program"
-      },
-      {
-        "offset": 819000,
-        "length": 16,
-        "text": "Program Exists!!"
-      },
-      {
-        "offset": 819020,
-        "length": 21,
-        "text": "Program name exists!!"
-      },
-      {
-        "offset": 819044,
-        "length": 12,
-        "text": "PROGRAM ONLY"
-      },
-      {
-        "offset": 819144,
-        "length": 18,
-        "text": "clear all programs"
-      },
-      {
-        "offset": 819552,
-        "length": 29,
-        "text": "Load all programs and samples"
-      },
-      {
-        "offset": 819716,
-        "length": 23,
-        "text": "Load MPC2000XL Programs"
-      },
-      {
-        "offset": 819740,
-        "length": 26,
-        "text": "    programs and samples!!"
-      },
-      {
-        "offset": 820408,
-        "length": 17,
-        "text": "SAVE ALL PROGRAMS"
-      },
-      {
-        "offset": 820496,
-        "length": 13,
-        "text": "ALL^PROGRAMS."
-      },
-      {
-        "offset": 820820,
-        "length": 20,
-        "text": "programs and samples"
-      },
-      {
-        "offset": 820880,
-        "length": 22,
-        "text": "ALL PROGRAMS & SAMPLES"
-      },
-      {
-        "offset": 821432,
-        "length": 10,
-        "text": "NOTES     "
-      },
-      {
-        "offset": 821948,
-        "length": 14,
-        "text": "PROGRAM CHANGE"
-      },
-      {
-        "offset": 822212,
-        "length": 6,
-        "text": "Notes:"
-      },
-      {
-        "offset": 823244,
-        "length": 4,
-        "text": "NOTE"
-      },
-      {
-        "offset": 823448,
-        "length": 24,
-        "text": "Reset all note assign to"
-      },
-      {
-        "offset": 823576,
-        "length": 23,
-        "text": "any programs in memory."
-      },
-      {
-        "offset": 823936,
-        "length": 4,
-        "text": "MIDI"
-      },
-      {
-        "offset": 823952,
-        "length": 4,
-        "text": "NOTE"
-      },
-      {
-        "offset": 823984,
-        "length": 29,
-        "text": "Active track receive channel:"
-      },
-      {
-        "offset": 824032,
-        "length": 34,
-        "text": "Sequence change by program change:"
-      },
-      {
-        "offset": 824260,
-        "length": 24,
-        "text": "Reset all note assign to"
-      },
-      {
-        "offset": 825380,
+        "offset": 715840,
         "length": 9,
-        "text": "NOTE ON  "
+        "text": "Program01"
       },
       {
-        "offset": 827672,
-        "length": 27,
-        "text": "Duration of recorded notes:"
-      },
-      {
-        "offset": 827928,
-        "length": 29,
-        "text": "Pressing FIX will change note"
-      },
-      {
-        "offset": 827960,
-        "length": 25,
-        "text": "timing of recorded notes."
-      },
-      {
-        "offset": 828008,
-        "length": 11,
-        "text": "Note^value:"
-      },
-      {
-        "offset": 828076,
-        "length": 5,
-        "text": "Note:"
-      },
-      {
-        "offset": 828084,
-        "length": 31,
-        "text": "Pressing DO IT will change note"
-      },
-      {
-        "offset": 828152,
-        "length": 11,
-        "text": "Note value:"
-      },
-      {
-        "offset": 828640,
-        "length": 10,
-        "text": "Program  :"
-      },
-      {
-        "offset": 829188,
-        "length": 20,
-        "text": "MERGE ON MIDI CH    "
-      },
-      {
-        "offset": 829212,
+        "offset": 715852,
         "length": 7,
         "text": "Program"
       },
       {
-        "offset": 829252,
-        "length": 13,
-        "text": "Program name:"
-      },
-      {
-        "offset": 829268,
-        "length": 20,
-        "text": "Midi program change:"
-      },
-      {
-        "offset": 829292,
-        "length": 11,
-        "text": "New Program"
-      },
-      {
-        "offset": 829332,
-        "length": 12,
-        "text": "Copy Program"
-      },
-      {
-        "offset": 829356,
-        "length": 14,
-        "text": "Delete Program"
-      },
-      {
-        "offset": 829400,
-        "length": 14,
-        "text": "this program!!"
-      },
-      {
-        "offset": 829424,
-        "length": 19,
-        "text": "Delete ALL Programs"
-      },
-      {
-        "offset": 829476,
-        "length": 11,
-        "text": "programs!!!"
-      },
-      {
-        "offset": 829508,
-        "length": 8,
-        "text": "NOTE ON "
-      },
-      {
-        "offset": 830096,
-        "length": 14,
-        "text": "Save a Program"
-      },
-      {
-        "offset": 830124,
-        "length": 12,
-        "text": "PROGRAM ONLY"
-      },
-      {
-        "offset": 830220,
-        "length": 17,
-        "text": "Save ALL Programs"
-      },
-      {
-        "offset": 830876,
-        "length": 11,
-        "text": "NOTE ONLY  "
-      },
-      {
-        "offset": 830892,
-        "length": 11,
-        "text": "EXCEPT NOTE"
-      },
-      {
-        "offset": 831156,
+        "offset": 716800,
         "length": 5,
-        "text": "Note:"
+        "text": "Midi:"
       },
       {
-        "offset": 831484,
-        "length": 20,
-        "text": "Loading program....."
+        "offset": 716808,
+        "length": 14,
+        "text": "Program Change"
       },
       {
-        "offset": 836008,
-        "length": 11,
-        "text": "Note^value:"
+        "offset": 716864,
+        "length": 24,
+        "text": "Transmit program changes"
       },
       {
-        "offset": 836028,
+        "offset": 717784,
         "length": 32,
-        "text": "     Track     :    Program     "
+        "text": "Type:SAVE ALL PROGRAMS & SAMPLES"
       },
       {
-        "offset": 837376,
+        "offset": 717980,
+        "length": 20,
+        "text": "programs and samples"
+      },
+      {
+        "offset": 718040,
+        "length": 22,
+        "text": "ALL PROGRAMS & SAMPLES"
+      },
+      {
+        "offset": 718136,
         "length": 19,
-        "text": "Create new program:"
+        "text": "Type:SAVE A PROGRAM"
       },
       {
-        "offset": 838810,
-        "length": 12,
-        "text": " [^PROGRAM^]"
+        "offset": 718568,
+        "length": 10,
+        "text": "NOTES     "
       },
       {
-        "offset": 851019,
-        "length": 13,
-        "text": "123-NOTE OFF "
+        "offset": 719148,
+        "length": 14,
+        "text": "PROGRAM CHANGE"
       },
       {
-        "offset": 853197,
-        "length": 16,
-        "text": "123-ALL NOTE OFF"
+        "offset": 719412,
+        "length": 6,
+        "text": "Notes:"
       },
       {
-        "offset": 864824,
-        "length": 28,
-        "text": "    Program name exist!!    "
+        "offset": 719996,
+        "length": 4,
+        "text": "NOTE"
       },
       {
-        "offset": 867613,
+        "offset": 720200,
+        "length": 24,
+        "text": "Reset all note assign to"
+      },
+      {
+        "offset": 720328,
+        "length": 23,
+        "text": "any programs in memory."
+      },
+      {
+        "offset": 720688,
         "length": 4,
         "text": "MIDI"
       },
       {
-        "offset": 867833,
-        "length": 14,
-        "text": "A^PROGRAM^^^^^"
+        "offset": 720704,
+        "length": 4,
+        "text": "NOTE"
       },
       {
-        "offset": 867850,
-        "length": 14,
-        "text": "ALL^PROGRAMS^^"
+        "offset": 720712,
+        "length": 29,
+        "text": "Active track receive channel:"
       },
       {
-        "offset": 869595,
+        "offset": 720760,
+        "length": 34,
+        "text": "Sequence change by program change:"
+      },
+      {
+        "offset": 720988,
+        "length": 24,
+        "text": "Reset all note assign to"
+      },
+      {
+        "offset": 722956,
+        "length": 9,
+        "text": "NOTE ON  "
+      },
+      {
+        "offset": 725044,
+        "length": 27,
+        "text": "Duration of recorded notes:"
+      },
+      {
+        "offset": 725220,
+        "length": 29,
+        "text": "Pressing FIX will change note"
+      },
+      {
+        "offset": 725252,
+        "length": 25,
+        "text": "timing of recorded notes."
+      },
+      {
+        "offset": 725292,
+        "length": 11,
+        "text": "Note^value:"
+      },
+      {
+        "offset": 725344,
+        "length": 5,
+        "text": "Note:"
+      },
+      {
+        "offset": 725352,
+        "length": 31,
+        "text": "Pressing DO IT will change note"
+      },
+      {
+        "offset": 725420,
+        "length": 11,
+        "text": "Note value:"
+      },
+      {
+        "offset": 726332,
+        "length": 20,
+        "text": "MERGE ON MIDI CH    "
+      },
+      {
+        "offset": 726356,
+        "length": 7,
+        "text": "Program"
+      },
+      {
+        "offset": 726396,
+        "length": 13,
+        "text": "Program name:"
+      },
+      {
+        "offset": 726412,
+        "length": 20,
+        "text": "Midi program change:"
+      },
+      {
+        "offset": 726436,
+        "length": 11,
+        "text": "New Program"
+      },
+      {
+        "offset": 726476,
+        "length": 12,
+        "text": "Copy Program"
+      },
+      {
+        "offset": 726500,
+        "length": 14,
+        "text": "Delete Program"
+      },
+      {
+        "offset": 726544,
+        "length": 14,
+        "text": "this program!!"
+      },
+      {
+        "offset": 726568,
+        "length": 19,
+        "text": "Delete ALL Programs"
+      },
+      {
+        "offset": 726620,
+        "length": 11,
+        "text": "programs!!!"
+      },
+      {
+        "offset": 726652,
+        "length": 8,
+        "text": "NOTE ON "
+      },
+      {
+        "offset": 728236,
+        "length": 14,
+        "text": "Load a Program"
+      },
+      {
+        "offset": 728260,
+        "length": 16,
+        "text": "Program Exists!!"
+      },
+      {
+        "offset": 728280,
+        "length": 21,
+        "text": "Program name exists!!"
+      },
+      {
+        "offset": 728312,
+        "length": 12,
+        "text": "PROGRAM ONLY"
+      },
+      {
+        "offset": 728412,
+        "length": 18,
+        "text": "clear all programs"
+      },
+      {
+        "offset": 728812,
+        "length": 29,
+        "text": "Load all programs and samples"
+      },
+      {
+        "offset": 729016,
+        "length": 23,
+        "text": "Load MPC2000XL Programs"
+      },
+      {
+        "offset": 729040,
+        "length": 26,
+        "text": "    programs and samples!!"
+      },
+      {
+        "offset": 729280,
+        "length": 14,
+        "text": "Save a Program"
+      },
+      {
+        "offset": 729308,
+        "length": 12,
+        "text": "PROGRAM ONLY"
+      },
+      {
+        "offset": 729404,
+        "length": 17,
+        "text": "Save ALL Programs"
+      },
+      {
+        "offset": 729924,
+        "length": 11,
+        "text": "NOTE ONLY  "
+      },
+      {
+        "offset": 729940,
+        "length": 11,
+        "text": "EXCEPT NOTE"
+      },
+      {
+        "offset": 730204,
+        "length": 5,
+        "text": "Note:"
+      },
+      {
+        "offset": 730512,
+        "length": 20,
+        "text": "Loading program....."
+      },
+      {
+        "offset": 732408,
+        "length": 19,
+        "text": "Create new program:"
+      },
+      {
+        "offset": 748753,
+        "length": 13,
+        "text": "123-NOTE OFF "
+      },
+      {
+        "offset": 750931,
+        "length": 16,
+        "text": "123-ALL NOTE OFF"
+      },
+      {
+        "offset": 760731,
+        "length": 28,
+        "text": "    Program name exist!!    "
+      },
+      {
+        "offset": 763245,
+        "length": 4,
+        "text": "MIDI"
+      },
+      {
+        "offset": 763353,
+        "length": 16,
+        "text": "PROGRAMS        "
+      },
+      {
+        "offset": 765129,
         "length": 14,
         "text": "MIDI CLOCK    "
       },
       {
-        "offset": 869610,
+        "offset": 765144,
         "length": 14,
         "text": "MIDI TIME CODE"
       },
       {
-        "offset": 869640,
+        "offset": 765174,
         "length": 14,
         "text": "MIDI CLOCK    "
       },
       {
-        "offset": 869655,
+        "offset": 765189,
         "length": 14,
         "text": "MIDI TIME CODE"
       },
       {
-        "offset": 871002,
+        "offset": 766878,
         "length": 14,
         "text": "NOTE          "
       },
       {
-        "offset": 871047,
+        "offset": 766923,
         "length": 14,
         "text": "PROGRAM CHANGE"
       }
@@ -1794,172 +1736,207 @@
         "text": "      USB<===>MPC2500 !!    "
       },
       {
-        "offset": 578168,
+        "offset": 535560,
         "length": 6,
         "text": "USBC0\\"
       },
       {
-        "offset": 578180,
-        "length": 4,
-        "text": "USBS"
+        "offset": 536244,
+        "length": 7,
+        "text": "USBS@*\\"
       },
       {
-        "offset": 815452,
+        "offset": 714504,
         "length": 8,
         "text": "AUTOLOAD"
       },
       {
-        "offset": 818364,
-        "length": 10,
-        "text": " HARD^DISK"
-      },
-      {
-        "offset": 819768,
+        "offset": 717464,
         "length": 19,
         "text": "Access to:HARD DISK"
       },
       {
-        "offset": 819788,
+        "offset": 717484,
         "length": 21,
         "text": "Access to:MEMORY CARD"
       },
       {
-        "offset": 819848,
+        "offset": 717544,
         "length": 33,
         "text": "disk on your Mac,before you leave"
       },
       {
-        "offset": 819904,
+        "offset": 717600,
         "length": 11,
         "text": "Change Disk"
       },
       {
-        "offset": 819916,
+        "offset": 717612,
         "length": 21,
         "text": "Access to:HARD DISK  "
       },
       {
-        "offset": 820136,
-        "length": 8,
-        "text": "AUTOLOAD"
+        "offset": 722728,
+        "length": 24,
+        "text": "      Disk not ready    "
       },
       {
-        "offset": 820264,
-        "length": 13,
-        "text": "[MEMORY CARD]"
+        "offset": 729004,
+        "length": 9,
+        "text": "Autoload:"
       },
       {
-        "offset": 820280,
-        "length": 13,
-        "text": "[ HARD DISK ]"
-      },
-      {
-        "offset": 830552,
+        "offset": 729592,
         "length": 14,
         "text": "AUTOLOAD file."
       },
       {
-        "offset": 830568,
+        "offset": 729608,
         "length": 8,
         "text": "AUTOLOAD"
       },
       {
-        "offset": 830580,
+        "offset": 729620,
         "length": 22,
         "text": "Autoload Folder Exists"
       },
       {
-        "offset": 830604,
+        "offset": 729644,
         "length": 26,
         "text": "  AUTOLOAD folder exists!!"
       },
       {
-        "offset": 830632,
+        "offset": 729704,
         "length": 25,
         "text": "existing AUTOLOAD folder."
       },
       {
-        "offset": 831352,
+        "offset": 730392,
         "length": 28,
         "text": "MPC2500 Memory Card     1.00"
       },
       {
-        "offset": 831388,
-        "length": 36,
-        "text": "MPC2500 Hard Disk       1.00Sequence"
+        "offset": 730428,
+        "length": 52,
+        "text": "MPC2500 Hard Disk       1.00Internal memory erasing "
       },
       {
-        "offset": 832524,
+        "offset": 730928,
+        "length": 8,
+        "text": "AUTOLOAD"
+      },
+      {
+        "offset": 731672,
         "length": 12,
         "text": "AFat12Volume"
       },
       {
-        "offset": 832540,
+        "offset": 731688,
         "length": 12,
         "text": "AFat16Volume"
       },
       {
-        "offset": 832556,
+        "offset": 731704,
         "length": 12,
         "text": "AFat32Volume"
       },
       {
-        "offset": 832572,
+        "offset": 731720,
         "length": 8,
         "text": "MSDOS5.0"
       },
       {
-        "offset": 832584,
+        "offset": 731732,
         "length": 11,
         "text": "MPC2500DISK"
       },
       {
-        "offset": 832596,
+        "offset": 731744,
         "length": 8,
         "text": "FAT12   "
       },
       {
-        "offset": 832608,
+        "offset": 731756,
         "length": 8,
         "text": "FAT16   "
       },
       {
-        "offset": 832620,
+        "offset": 731768,
         "length": 8,
         "text": "FAT32   "
       },
       {
-        "offset": 832888,
+        "offset": 732172,
         "length": 13,
         "text": "ACompactFlash"
       },
       {
-        "offset": 832904,
+        "offset": 732188,
         "length": 9,
         "text": "AHardDisk"
       },
       {
-        "offset": 864186,
+        "offset": 736520,
+        "length": 12,
+        "text": "Disk status:"
+      },
+      {
+        "offset": 759890,
         "length": 28,
         "text": "   Insert Memory Card !!    "
       },
       {
-        "offset": 864360,
+        "offset": 760064,
         "length": 28,
         "text": "       Disk is full!!       "
       },
       {
-        "offset": 864505,
+        "offset": 760412,
         "length": 28,
         "text": "      USB<===>MPC2500 !!    "
       },
       {
-        "offset": 867732,
+        "offset": 763272,
+        "length": 15,
+        "text": "MEMORY CARD    "
+      },
+      {
+        "offset": 763288,
+        "length": 15,
+        "text": "HARD DISK      "
+      },
+      {
+        "offset": 763526,
+        "length": 15,
+        "text": "MEMORY CARD    "
+      },
+      {
+        "offset": 763542,
+        "length": 15,
+        "text": "HARD DISK      "
+      },
+      {
+        "offset": 763588,
+        "length": 15,
+        "text": "MEMORY CARD    "
+      },
+      {
+        "offset": 763604,
+        "length": 15,
+        "text": "HARD DISK      "
+      },
+      {
+        "offset": 767616,
+        "length": 15,
+        "text": "HARD DISK      "
+      },
+      {
+        "offset": 769080,
         "length": 11,
         "text": "MEMORY CARD"
       },
       {
-        "offset": 867744,
+        "offset": 769092,
         "length": 11,
         "text": "HARD DISK  "
       }
@@ -2011,154 +1988,159 @@
         "text": "Flash ROM Writing    %"
       },
       {
-        "offset": 818520,
+        "offset": 727820,
         "length": 25,
         "text": "   Not MPC2500 OS file !!"
       },
       {
-        "offset": 818548,
+        "offset": 727848,
         "length": 9,
         "text": "OS update"
       },
       {
-        "offset": 818560,
+        "offset": 727860,
         "length": 31,
         "text": "This writes OS to Flash memory."
       },
       {
-        "offset": 818804,
-        "length": 12,
-        "text": "OS-XL update"
-      },
-      {
-        "offset": 818820,
-        "length": 34,
-        "text": "This writes OS-XL to Flash memory."
-      },
-      {
-        "offset": 831580,
+        "offset": 730588,
         "length": 21,
         "text": "   Flash ROM erasing "
       },
       {
-        "offset": 831604,
+        "offset": 730612,
         "length": 21,
         "text": "   Flash ROM Writing "
       },
       {
-        "offset": 864447,
+        "offset": 760151,
         "length": 28,
         "text": "       File write error !!  "
       },
       {
-        "offset": 864737,
+        "offset": 760238,
+        "length": 28,
+        "text": "      Close write error !!  "
+      },
+      {
+        "offset": 760644,
         "length": 28,
         "text": "   Flash ROM erase error!!  "
       },
       {
-        "offset": 864766,
+        "offset": 760673,
         "length": 28,
         "text": "   Flash ROM write error!!  "
       },
       {
-        "offset": 864795,
+        "offset": 760702,
         "length": 28,
         "text": "   Flash ROM read  error!!  "
       },
       {
-        "offset": 865172,
+        "offset": 761079,
         "length": 28,
         "text": "       Erase error !!       "
       }
     ],
     "legacy_compatibility": [
       {
-        "offset": 816544,
+        "offset": 680136,
+        "length": 4,
+        "text": "midi"
+      },
+      {
+        "offset": 715468,
         "length": 26,
         "text": "Waiting for MIDI time code"
       },
       {
-        "offset": 816572,
+        "offset": 715496,
         "length": 23,
         "text": "Waiting for MIDI 'Play'"
       },
       {
-        "offset": 816664,
+        "offset": 715580,
         "length": 9,
         "text": "MPC2000XL"
       },
       {
-        "offset": 817876,
+        "offset": 716800,
         "length": 5,
         "text": "Midi:"
       },
       {
-        "offset": 819304,
-        "length": 25,
-        "text": "Load ALL(SEQS&SONGS) File"
-      },
-      {
-        "offset": 819464,
-        "length": 24,
-        "text": "Load ALL(MPC2000XL) File"
-      },
-      {
-        "offset": 819584,
-        "length": 25,
-        "text": "and ALL(SEQS&SONGS)files."
-      },
-      {
-        "offset": 819716,
-        "length": 23,
-        "text": "Load MPC2000XL Programs"
-      },
-      {
-        "offset": 823936,
+        "offset": 720688,
         "length": 4,
         "text": "MIDI"
       },
       {
-        "offset": 829188,
+        "offset": 726332,
         "length": 20,
         "text": "MERGE ON MIDI CH    "
       },
       {
-        "offset": 829268,
+        "offset": 726412,
         "length": 20,
         "text": "Midi program change:"
       },
       {
-        "offset": 865201,
+        "offset": 728564,
+        "length": 25,
+        "text": "Load ALL(SEQS&SONGS) File"
+      },
+      {
+        "offset": 728724,
+        "length": 24,
+        "text": "Load ALL(MPC2000XL) File"
+      },
+      {
+        "offset": 728844,
+        "length": 25,
+        "text": "and ALL(SEQS&SONGS)files."
+      },
+      {
+        "offset": 729016,
+        "length": 23,
+        "text": "Load MPC2000XL Programs"
+      },
+      {
+        "offset": 761108,
         "length": 28,
         "text": "   Not MPC2000XL file !!    "
       },
       {
-        "offset": 867613,
+        "offset": 763245,
         "length": 4,
         "text": "MIDI"
       },
       {
-        "offset": 869595,
+        "offset": 765129,
         "length": 14,
         "text": "MIDI CLOCK    "
       },
       {
-        "offset": 869610,
+        "offset": 765144,
         "length": 14,
         "text": "MIDI TIME CODE"
       },
       {
-        "offset": 869640,
+        "offset": 765174,
         "length": 14,
         "text": "MIDI CLOCK    "
       },
       {
-        "offset": 869655,
+        "offset": 765189,
         "length": 14,
         "text": "MIDI TIME CODE"
       }
     ],
     "security_misc": [
+      {
+        "offset": 192,
+        "length": 48,
+        "text": "MPC2500 Boot    Version=1.01    21-DEC-2005     "
+      },
       {
         "offset": 31856,
         "length": 12,
@@ -2166,33 +2148,23 @@
       },
       {
         "offset": 65536,
-        "length": 47,
-        "text": "MPC2500         Version=3.13   16-FEB-2015     "
+        "length": 48,
+        "text": "MPC2500         Version=1.24   30-July-2008     "
       },
       {
-        "offset": 815296,
-        "length": 26,
-        "text": "    JJ OS   Version 0.00  "
-      },
-      {
-        "offset": 815476,
-        "length": 14,
-        "text": "CLEAR PASSWORD"
-      },
-      {
-        "offset": 817612,
-        "length": 4,
-        "text": "TEST"
-      },
-      {
-        "offset": 818788,
-        "length": 12,
-        "text": "MPC2500 TEST"
-      },
-      {
-        "offset": 826676,
+        "offset": 724256,
         "length": 24,
         "text": "======= PAD TEST ======="
+      },
+      {
+        "offset": 727976,
+        "length": 18,
+        "text": "File code Version="
+      },
+      {
+        "offset": 727996,
+        "length": 18,
+        "text": "File name Version="
       }
     ]
   },
