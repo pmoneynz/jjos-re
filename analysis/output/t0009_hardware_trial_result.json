@@ -1,0 +1,27 @@
+{
+  "trial_id": "T0009",
+  "date_utc": "2026-03-15",
+  "operator": "gpt-5.3-codex-high",
+  "device": "MPC2500",
+  "media": {
+    "type": "CF",
+    "filesystem": "FAT16",
+    "filename_used": "mpc2500.update"
+  },
+  "input_firmware_sha256": "6a09b1801f4c38c2f710028126b70290e907980aea35b18c6e66459004d089b5",
+  "candidate_firmware_sha256": "4b08e3c19040af8c356c844dd924ddcfd14d1aa0796601f02d4acb679f28cdab",
+  "candidate_path": "hardware_candidates/mpc2500_t0009_diag_control_force_status10.bin",
+  "manifest_path": "analysis/output/t0009_diag_control_force_status10_manifest.json",
+  "expected_behavior": "Forced status-code 10 should produce control-branch message path for deterministic A/B comparison.",
+  "observed_behavior": "Operator reported diagnostic run shows 'Wrong card !!'.",
+  "result": "rejected",
+  "error_text_observed": "Wrong card !!",
+  "flash_commit_reached": false,
+  "flash_commit_executed": false,
+  "evidence": {
+    "photos": [],
+    "videos": [],
+    "notes": "Operator report only in chat; no image reference attached for this specific run."
+  },
+  "next_action": "Repeat with known-good CF card/media state that has already accepted T0008 to ensure diagnostic dispatch path is reached."
+}
