@@ -228,6 +228,7 @@
 
 - Diagnostic build generated; awaiting hardware A/B capture.
 - Hardware run outcome reported: `Wrong card !!`.
+- Hardware run outcome reported: `Wrong card !!`.
 
 ## Trial 0010 - Diagnostic T0008 (Forced Status=10 + cmp#11)
 
@@ -249,6 +250,8 @@
 ### Current status
 
 - Diagnostic build generated; awaiting hardware A/B capture.
+- Hardware run outcome reported: `Wrong card !!` (same as T0014).
+- No differential behavior observed in robust all-dispatch diagnostic A/B run.
 - Hardware run outcome reported: `Wrong card !!` (same as T0009).
 - No differential behavior observed in this A/B run.
 
