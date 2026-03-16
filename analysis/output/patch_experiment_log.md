@@ -202,5 +202,6 @@
 ### Current status
 
 - Candidate generated and manifested with deterministic single-byte control-flow change.
-- Hardware behavior evidence not yet captured (`analysis/output/t0008_hardware_trial_result.json` result is `unknown`).
+- Hardware acceptance is proven (load + completed flash write).
+- No-media validation case showed same message as control (`Insert Memory Card !!`), so behavior-change effect is not yet demonstrated for this patch.
 

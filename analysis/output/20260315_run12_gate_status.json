@@ -1,0 +1,25 @@
+{
+  "session_id": "20260315-run-12",
+  "agent": "gpt-5.3-codex-high",
+  "checklist_version": "analysis/MPC2500_OS_RE_CHECKLIST.md",
+  "gates": [
+    {
+      "step_id": "8.2",
+      "name": "First logic patch protocol",
+      "status": "FAIL",
+      "evidence": [
+        "analysis/output/t0008_hardware_trial_result.json (result=accepted, flash completed)",
+        "analysis/output/t0008_hardware_capture_notes.md",
+        "A/B no-media check: T0008 and control both display `Insert Memory Card !!`."
+      ],
+      "notes": "Reproducible behavior change was not demonstrated in tested scenario, so logic-patch protocol remains open."
+    }
+  ],
+  "summary": {
+    "pass_count": 0,
+    "fail_count": 1,
+    "skip_count": 0,
+    "hard_blocker": "8.2 failed because observed behavior matched control in tested case.",
+    "next_priority_gate": "8.2"
+  }
+}

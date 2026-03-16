@@ -13,15 +13,20 @@
   "candidate_path": "hardware_candidates/mpc2500_t0008_logic_error_dispatch_shift.bin",
   "manifest_path": "analysis/output/t0008_mpc2500_logic_error_dispatch_shift_manifest.json",
   "expected_behavior": "When status code equals 10 in error-dispatch path, control should no longer take the cmp/eq #10 branch (now cmp/eq #11), changing message selection behavior.",
-  "observed_behavior": "No hardware execution recorded yet for this first logic patch candidate.",
-  "result": "unknown",
-  "error_text_observed": "",
-  "flash_commit_reached": false,
-  "flash_commit_executed": false,
+  "observed_behavior": "T0008 loads and completes flash write on hardware. In no-media scenario, displayed message remained 'Insert Memory Card !!', same as control.",
+  "result": "accepted",
+  "error_text_observed": "Insert Memory Card !!",
+  "flash_commit_reached": true,
+  "flash_commit_executed": true,
   "evidence": {
-    "photos": [],
+    "photos": [
+      "chat_attachment:t0008_screen_01_update_dialog",
+      "chat_attachment:t0008_screen_02_completed",
+      "chat_attachment:t0008_screen_03_no_media_insert_memory_card",
+      "chat_attachment:t0007_screen_02_no_media_insert_memory_card_control"
+    ],
     "videos": [],
-    "notes": "Static-only verification: single-byte instruction immediate changed at 0x1064 from 0x0a to 0x0b."
+    "notes": "Detailed evidence interpretation is documented in analysis/output/t0008_hardware_capture_notes.md."
   },
-  "next_action": "Run controlled hardware trial and capture resulting error-message behavior under known status-code trigger conditions."
+  "next_action": "Trigger additional error-dispatch scenarios likely to hit status-code branch at 0x1064 and compare against control to detect differential behavior."
 }
