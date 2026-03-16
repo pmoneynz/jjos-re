@@ -86,6 +86,29 @@ export PATH="$JAVA_HOME/bin:$PATH"
   -postScript ReportSuperHUpdatePath.py "/path/to/analysis/output/ghidra_sh_update_map.md"
 ```
 
+## Practical Patch Workflow (Current Best Path)
+
+Use a strict, reproducible patch workflow before any hardware flash attempt:
+
+1. Inspect known patch-safe string targets:
+   - `python3 analysis/firmware_patch_tool.py inspect --firmware mpc2500_jv313.bin`
+2. Build a same-length patch candidate from a JSON spec:
+   - `python3 analysis/firmware_patch_tool.py apply --firmware mpc2500_jv313.bin --spec analysis/patch_specs/poc_late_os_update.json --output analysis/output/poc_late_os_update.bin --manifest analysis/output/poc_late_os_update_manifest.json`
+3. Run staged hardware tests using:
+   - `analysis/PRACTICAL_PATCH_PATH.md`
+
+The patch helper refuses to patch unless expected bytes match exactly, which prevents drift and accidental corruption.
+
+## Manual Knowledge Base
+
+Manual-derived facts and constraints are tracked in:
+
+- `analysis/knowledge_base/MANUAL_SOURCES.md`
+- `analysis/knowledge_base/MANUAL_KNOWLEDGE_SUMMARY.md`
+- `analysis/knowledge_base/manual_facts.json`
+
+Use these before designing hardware trials so media, update-path, and USB assumptions stay consistent with documented behavior.
+
 ## Caution
 
 This repo includes a proprietary firmware binary because that was explicitly requested for publication. That may have IP/legal implications depending on jurisdiction and intended use.

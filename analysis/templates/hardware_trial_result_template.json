@@ -1,0 +1,28 @@
+{
+  "trial_id": "T0000",
+  "date_utc": "YYYY-MM-DD",
+  "operator": "name_or_agent",
+  "device": "MPC2500",
+  "media": {
+    "type": "CF|HD|USB",
+    "filesystem": "FAT16|FAT32|other",
+    "filename_used": "MPC2500.SOS"
+  },
+  "input_firmware_sha256": "",
+  "candidate_firmware_sha256": "",
+  "candidate_path": "",
+  "manifest_path": "",
+  "expected_behavior": "What should appear if patch is active",
+  "observed_behavior": "What actually happened",
+  "result": "accepted|rejected|unknown",
+  "error_text_observed": "",
+  "flash_commit_reached": false,
+  "flash_commit_executed": false,
+  "evidence": {
+    "photos": [],
+    "videos": [],
+    "notes": ""
+  },
+  "next_action": "single next step"
+}
+

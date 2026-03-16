@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "generated_utc": "2026-03-13T00:00:00Z",
+  "sources": [
+    {
+      "id": "service_notes",
+      "path": "/home/ubuntu/.cursor/projects/workspace/uploads/Akai_MPC-2500_service_notes.llm.gold.md",
+      "sha256": "506f96c0e38e598307fdfc9a9f402f5bccf8f516f04d186746fac46ea35369e5"
+    },
+    {
+      "id": "operator_manual",
+      "path": "/home/ubuntu/.cursor/projects/workspace/uploads/MPC2500_manual.llm.gold.md",
+      "sha256": "c978ac381dd5af78b28292cedbd27489e90613e690d126ad313322c554912dd2"
+    }
+  ],
+  "facts": [
+    {
+      "id": "F001",
+      "fact": "Service update flow uses Compact Flash media and USB mass-storage transfer as a copy path to CF.",
+      "confidence": "medium",
+      "source_id": "service_notes",
+      "evidence_lines": [174, 179, 184, 193, 196],
+      "category": "update_flow"
+    },
+    {
+      "id": "F002",
+      "fact": "Service update boot is entered while powering on with the Window button held.",
+      "confidence": "medium",
+      "source_id": "service_notes",
+      "evidence_lines": [193, 196],
+      "category": "update_flow"
+    },
+    {
+      "id": "F003",
+      "fact": "Service notes show update screen text with file token M25V100B.BIN and instruction to press F6 (DO IT).",
+      "confidence": "medium",
+      "source_id": "service_notes",
+      "evidence_lines": [187, 189, 193, 196],
+      "category": "update_flow"
+    },
+    {
+      "id": "F004",
+      "fact": "Service notes state update is not performed directly from a computer over USB; CF media is required.",
+      "confidence": "medium",
+      "source_id": "service_notes",
+      "evidence_lines": [190, 193, 196],
+      "category": "update_flow"
+    },
+    {
+      "id": "F005",
+      "fact": "Service notes indicate user input is not accepted while USB cable is connected in the transfer state.",
+      "confidence": "medium",
+      "source_id": "service_notes",
+      "evidence_lines": [193, 196],
+      "category": "usb_mode"
+    },
+    {
+      "id": "F006",
+      "fact": "Test OS installation follows normal OS update procedure and remains active until regular OS is reinstalled.",
+      "confidence": "medium",
+      "source_id": "service_notes",
+      "evidence_lines": [201, 208, 211],
+      "category": "test_mode"
+    },
+    {
+      "id": "F007",
+      "fact": "JIG PC Flash ROM workflow references socket J110 on the CPU board for test/boot-block recovery usage.",
+      "confidence": "medium",
+      "source_id": "service_notes",
+      "evidence_lines": [208, 249],
+      "category": "test_mode"
+    },
+    {
+      "id": "F008",
+      "fact": "Service parts list for PC CPU board includes IC2 AM29LV641DL90REI flash ROM.",
+      "confidence": "high",
+      "source_id": "service_notes",
+      "evidence_lines": [248, 249],
+      "category": "hardware"
+    },
+    {
+      "id": "F009",
+      "fact": "Operator manual states Compact Flash card support range is 32MB to 2GB.",
+      "confidence": "high",
+      "source_id": "operator_manual",
+      "evidence_lines": [2390, 2776],
+      "category": "storage"
+    },
+    {
+      "id": "F010",
+      "fact": "Operator manual states USB connection is mass-storage class oriented around memory card/internal HDD, not direct internal-memory visibility.",
+      "confidence": "high",
+      "source_id": "operator_manual",
+      "evidence_lines": [2671, 2697],
+      "category": "usb_mode"
+    },
+    {
+      "id": "F011",
+      "fact": "Operator manual describes USB mode entry from LOAD/SAVE pages via F4 (USB), and warns page/mode changes are blocked until USB cable disconnect.",
+      "confidence": "high",
+      "source_id": "operator_manual",
+      "evidence_lines": [2676, 2677, 2697, 2707],
+      "category": "usb_mode"
+    },
+    {
+      "id": "F012",
+      "fact": "Operator manual specs include 240x64 LCD, USB mass-storage class support, 5-pin DIN MIDI in x2 and out x4.",
+      "confidence": "high",
+      "source_id": "operator_manual",
+      "evidence_lines": [2773, 2776, 2781],
+      "category": "hardware"
+    },
+    {
+      "id": "F013",
+      "fact": "Operator manual indicates internal flash contains factory preset data and bundled CF INTERNAL folder mirrors default data.",
+      "confidence": "medium",
+      "source_id": "operator_manual",
+      "evidence_lines": [2666, 2797, 2800, 2803],
+      "category": "factory_data"
+    }
+  ]
+}
+

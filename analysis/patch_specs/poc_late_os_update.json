@@ -1,0 +1,12 @@
+{
+  "name": "poc_late_os_update_label",
+  "notes": "Stage-1 non-boot cosmetic patch. Same-length replacement at late UI label.",
+  "patches": [
+    {
+      "name": "late_os_update_label",
+      "offset": "0xC7D74",
+      "expected_ascii": "OS update",
+      "replacement_ascii": "OS MOD V1"
+    }
+  ]
+}
