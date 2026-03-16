@@ -88,3 +88,50 @@ Current confidence:
   - `Flash ROM Writing %`
 - The exact function that sends AMD flash command sequences to the `AM29LV641`
 - The exact checksum / OS-data validation routine
+
+## Error-string branch mapping status (run-08)
+
+For target firmware `analysis/mpc2500.bin`, Capstone SH4 disassembly now proves:
+
+- `File data error` (`0x7c50`) branch leg at `0x00000cf4`, reached when the pre-check return at `0x00000c90` is non-zero (`tst r6,r6` + `bf/s 0x00000cf4`).
+- `OS data error` (`0x7c80`) branch leg at `0x00000dd4`, reached via mismatch branches to `0x00000dd0` from checks at `0x00000d42`, `0x00000d76`, and `0x00000d84`.
+
+Still unresolved:
+
+- `Wrong file` branch/function proof. Current static artifacts still show no direct xref for `0x7df5`, and no direct literal-load proof for the late duplicate string.
+
+Detailed evidence notes: `analysis/output/error_branch_mapping_run08.md`.
+
+## Error-string branch mapping status (run-09 update)
+
+`Wrong file` is now branch-mapped for `analysis/mpc2500.bin`:
+
+- status code from `FUN_00008db4` is dispatched at `0x1062..0x1082`
+- non-10/non-20 codes route to `FUN_000016fc` with `r6 = status_code`
+- `FUN_000016fc` indexes fixed-width table at `0x7d81` using `29 * index`
+- index `4` resolves to `0x7df5` (`Wrong file !!`)
+
+Detailed proof: `analysis/output/error_branch_mapping_run09.md`.
+
+## Flash routine characterization status (run-10 update)
+
+Strengthened evidence now proves:
+
+- `FUN_000087a6` failure maps directly to message index `30` -> `Flash ROM write error` (`0x80e7`) via `0x1034 -> 0x16fc`.
+- OS verify/integrity checks are proven in `0x00000d3a..0x00000dd8` (mismatch branches to `OS data error`).
+
+Still pending for full gate closure:
+
+- unique command-sequence proof that `FUN_0000853e` is erase (vs setup/probe) rather than a generic pre-write stage.
+
+Detailed evidence notes: `analysis/output/flash_routine_characterization_run10.md`.
+
+## Flash routine proof status (run-11)
+
+Routine-role mapping is now formalized in `analysis/output/flash_routine_proof_run11.md`:
+
+- Erase-stage: `FUN_0000853e` (controller command+wait sequencing in update flow)
+- Program-stage: `FUN_00008db4` (bulk transfer loop through `FUN_000084f8`/`FUN_0000844a`)
+- Verify-stage: validation block `0x00000d3a..0x00000d96` (`OS data error` mismatch leg)
+
+Supporting dispatch table mapping for flash-specific error rows (29/30/31) is included in the same proof note.
